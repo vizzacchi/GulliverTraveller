@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Gulliver Traveler</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="d-flex justify-content-between fixed-top align-items-center header__menu">
+            <a href="../index.html" class="h-100"><img src="../images/GulliverTraveller.png" class="img-fluid h-100"
+                    alt="Logo Gulliver Traveller"></a>
+            <div class="d-flex align-items-center">
+                <p><span class="h6 m-3">Cotações:</span></p> 
+                <div class="cotacoes my-1">Peso: <br>  R$ 0,044 </div>
+                <div class="cotacoes my-1">Dolar: <br> R$ 5,141 </div>
+                <div class="cotacoes my-1">Euro: <br> R$ 5,344</div>
+            </div>
+            <p><span class="h5"><i class="bi bi-cloud-sun"></span></i> 12°C</p>
+            <img src="../images/LoginRosto.png" alt="Botão para login do portal" class="img-fluid m-3">
+        </div>
+    </header>
+    <!-- início carrousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active corousel__header" data-bs-interval="3000">
+                <img src="../images/teatro_municipal.jpg" class="img-fluid"
+                    alt="Foto do Teatro Municipal de São Paulo">
+            </div>
+            <div class="carousel-item  corousel__header" data-bs-interval="3000">
+                <img src="../images/Museu_do_Ipiranga.jpg" class="img-fluid" alt="Foto do Museu de Ipiranga">
+            </div>
+            <div class="carousel-item  corousel__header" data-bs-interval="3000">
+                <img src="../images/PonteSpraiada.jpg" class="img-fluid"
+                    alt="Foto do rio pinheiros com panoramica da ponte spraiada">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="navegacao d-flex align-items-center justify-content-around">
+            <form action="">
+                <div class="row m-3">
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <label for="origem" class="form-label navegacao__title">Origem</label>
+                        <input type="text" id="origem" name="origem" class="form-control" placeholder="Ex.: Rio de Janeiro">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <label for="destino" class="form-label navegacao__title">Destino</label>
+                        <input type="text" id="destino" name="destino" class="form-control" value="São Paulo" readonly>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <label for="ida" class="form-label navegacao__title">Data Ida</label>
+                        <input type="date" id="ida" name="ida" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <label for="volta" class="form-label navegacao__title">Data Volta</label>
+                        <input type="date" id="volta" name="volta" class="form-control">
+                    </div>
+                </div>
+                <div
+                    class="row">
+                    <div class="d-flex justify-content-end">
+                        <input type="submit" class="btn navegacao__btn mx-4" value="BUSCAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="cards">
+        <h1 class="cards__title h3">Explore a cidade de São Paulo</h1>
+        <div class="row row-cols-1 row-cols-md-6 row-cols-lg-3 row-col-xl-4">
+            <div>
+                <h3>Melhores Hospedagens</h3>
+                <figure>
+                    <img src=" " alt="">
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

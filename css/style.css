@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.carousel__desc{
+    position: relative;
+    top:-80px;
+    z-index: 2;
+    color: #e07a5f;
+}
+.header__titulo{
+    color: #3D405B;
+}
+.corousel__header{
+    height: 240px;
+}
+.navegacao{
+    background-color: #F2CC8F;
+    width: 960px;
+    height: 160px;
+    border-radius: 5px;
+    position: relative;
+    top:-40px;
+    z-index: 10;
+}
+.navegacao__title{
+    font-weight: 700;
+}
+.navegacao__btn{
+    background-color: #3D405B;
+    color:#ffffff;
+}
+.form__pesquisar{
+    position: absolute;
+    bottom: 60px;
+}
+.pesquisar{
+    width:60%;
+    border-radius: 15px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-image: url(../images/lupa.png);
+    background-size: 1.5vw;
+}
+.header__menu{
+    background-color: #3D405B;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+.cotacoes{
+    margin: 5px;
+}
+
+.cards__title{
+    text-align: center;
+}

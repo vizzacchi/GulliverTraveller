@@ -19,13 +19,13 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
 				<div class="container-fluid">
 					<a href="../index.html" class="navbar-brand ps-3">
-                        <img src="../images/GulliverTravellerMenu.png" alt="" width="100" height="60">
+                        <img src="../images/GulliverTravellerMenu.png" alt="Logo Gulliver Traveller">
                     </a>
-					<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-						<ul class="navbar-nav ms-auto">
+					<div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
+						<ul class="navbar-nav">
                             <li class="nav-item"><a href="" class="nav-link">Aluguel de carros</a></li>
                             <li class="nav-item"><a href="" class="nav-link">Cultura</a></li>
                             <li class="nav-item"><a href="" class="nav-link">Entretenimento</a></li>
@@ -34,12 +34,12 @@
                             <li class="nav-item"><a href="hoteis.html" class="nav-link">Hotéis</a></li>
                             <li class="nav-item"><a href="" class="nav-link">Parques</a></li>
                             <li class="nav-item"><a href="" class="nav-link">Vida noturna</a></li>
-							<li class="nav-item ps-3 pe-3">
-								<a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-									<img src="../images/user_icon.png" alt="" width="42" height="42">
-								</a>
-							</li>
 						</ul>
+					</div>
+					<div class="nav-item login ps-3 pe-3">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+							<i class="bi bi-person-circle"></i>
+						</a>
 					</div>
 				</div>
 			</nav>
@@ -50,37 +50,71 @@
 					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Login</h5>
 					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
-				<div class="offcanvas-body">
-					<form method="" action="" autocomplete="off">
-						<div class="form-floating mb-3">
-							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
-							<label for="floatingInput">Email address</label>
+				<div class="offcanvas-body">				
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Entrar</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cadastre-se</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<form method="" action="" autocomplete="off">
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
+									<label for="floatingInput">Email address</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
+									<label for="floatingPassword">Password</label>
+								</div>
+								<div class="text-end">
+									<button type="submit" class="btn btn-success w-50">Login</button>
+								</div>
+							</form>
 						</div>
-						<div class="form-floating mb-3">
-							<input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
-							<label for="floatingPassword">Password</label>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<form method="" action="" autocomplete="off">
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control" id="floatingInput" placeholder="Usuário" value="user">
+									<label for="floatingInput">User</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
+									<label for="floatingInput">Email address</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
+									<label for="floatingPassword">Password</label>
+								</div>
+								<div class="text-end">
+									<button type="submit" class="btn btn-primary w-50">Cadastrar</button>
+								</div>
+							</form>
 						</div>
-						<div class="text-end">
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</div>
-					</form>
+					</div>		
 				</div>
 			</div>
 		</header>
 
         <!----- Hotéis ----->
         <article class="container">
-            <h1>Hospedagem</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Hospedagem</li>
-                </ol>
-            </nav>
+			<section>
+				<h1>Hospedagem</h1>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="destino.html">Destino</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Hospedagem</li>
+					</ol>
+				</nav>
+			</section>
 
             <!------ Card ------>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/blue_tree_morumbi.jpg" class="card-img-top" alt="Blue Tree Premium Morumbi">
@@ -95,17 +129,17 @@
                                 <i class="bi bi-star-fill text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São Paulo - SP, 04707-000
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 5187-1200
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/blue_tree_paulista.jpg" class="card-img-top" alt="Blue Tree Premium Paulista">
@@ -120,17 +154,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Rua Peixoto Gomide, 707 - Bela Vista, São Paulo - SP, 01409-001
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 3147-7000
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/bourbon_convention.jpg" class="card-img-top" alt="Bourbon Convention Ibirapuera">
@@ -145,17 +179,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Av. Ibirapuera, 2927 - Ibirapuera, São Paulo - SP, 04029-200
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 2161-2200
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/comfort_ibirapuera.jpg" class="card-img-top" alt="Comfort Ibirapuera">
@@ -170,17 +204,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Av. Sabiá, 825 - Indianópolis, São Paulo - SP, 04515-001
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 4673-0255
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/golden_tulip_paulista.jpg" class="card-img-top" alt="Golden Tulip Paulista Plaza">
@@ -195,17 +229,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Alameda Santos, 85 - Jardins, São Paulo - SP, 01419-000
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 2627-1000
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/ibis_styles.jpg" class="card-img-top" alt="IBIS Styles São Paulo Anhembi">
@@ -220,17 +254,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP, 02031-000
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 3336-5400
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/mercure_pamplona.jpg" class="card-img-top" alt="Mercure São Paulo Pamplona">
@@ -245,17 +279,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> R. Pamplona, 1315 - Jardim Paulista, São Paulo - SP, 01405-002
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 2878-5500
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/renaissance_sao.jpg" class="card-img-top" alt="Renaissance São Paulo Hotel">
@@ -270,17 +304,17 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Alameda Santos, 2233 - Jardim Paulista, São Paulo - SP, 01419-002
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 3069-2233
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col d-flex">
                     <div class="card">
                         <a href="">
                             <img src="../images/hoteis/sheraton_WTC.jpg" class="card-img-top" alt="Sheraton São Paulo WTC Hotel">
@@ -295,12 +329,12 @@
                                 <i class="bi bi-star text-warning"></i>
                             </div>
                             <div class="card-text">
-                                <div class="address">
+                                <p class="address">
                                     <strong>Endereço:</strong> Av. das Nações Unidas, 12559 - Brooklin Novo, São Paulo - SP, 04578-903
-                                </div>
-                                <div class="phone">
+                                </p>
+                                <p class="phone">
                                     <strong>Telefone:</strong> (11) 3055-8000
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -311,8 +345,8 @@
         <!----- Footer ----->
         <footer>
             <div class="container">
-				<div class="row">
-                    <div class="col-8 me-auto">
+				<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="col me-auto">
                         <ul class="list-unstyled d-flex text-end">
                             <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24" height="24"></i></a></li>
                             <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
@@ -320,14 +354,14 @@
                         </ul>
                         <p>Gulliver Traveller | FIAP &copy;2022 - Todos os direitos reservados.</p>
                     </div>
-					<div class="col-4">
-						<form>
+					<div class="col">
+						<form method="" action="">
 							<h5>Assine a nossa newsletter</h5>
 							<p>Monthly digest of whats new and exciting from us.</p>
 							<div class="d-flex w-100 gap-2">
 								<label for="newsletter1" class="visually-hidden">Email address</label>
-								<input id="newsletter1" type="text" class="form-control" placeholder="E-mail...">
-								<button class="btn btn-primary" type="button">Inscrever</button>
+								<input type="email" class="form-control" id="newsletter1" placeholder="Digite seu e-mail...">
+								<input type="submit" class="btn btn-primary" value="Inscrever">
 							</div>
 						</form>
 					</div>

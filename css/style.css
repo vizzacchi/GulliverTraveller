@@ -58,16 +58,22 @@ html{
     text-align: center;
 }
 
-
-
+/********** Header **********/
 .navbar.bg-blue {
     background-color: #3D405B !important
 }
-
+.navbar .navbar-brand img {
+	width: 4rem;
+}
+.navbar .nav-item.login i {
+    font-size: 2.4rem;
+	color: #E07A5F
+}
+/****************************/
 
 /********* Articles *********/
 article {
-    margin-top: 5.6rem;
+    margin-top: 4.6rem;
     padding: 2rem 0 4rem 0
 }
 article h1 {
@@ -77,18 +83,22 @@ article h1 {
 
 /*********** Card ***********/
 .card img {
-    height: 11rem;
+    height: 10rem
 }
-.card .card-body {
-    min-height: 12rem;
+.card .card-body h5 {
+	font-size: 1rem;
+	font-weight: 700
+}
+.card .card-body p {
+	font-size: .9rem
 }
 /****************************/
 
 /********** Footer **********/
 footer {
     padding: 3rem 0 !important;
-	color: #FFF;
-	background-color: #3D405B
+	color: #3D405B;
+	background-color: #F2CC8F
 }
 footer ul li {
     font-size: 1.4rem

@@ -57,3 +57,40 @@ html{
 .cards__title{
     text-align: center;
 }
+
+
+
+.navbar.bg-blue {
+    background-color: #3D405B !important
+}
+
+
+/********* Articles *********/
+article {
+    margin-top: 5.6rem;
+    padding: 2rem 0 4rem 0
+}
+article h1 {
+    margin-bottom: 2rem
+}
+/****************************/
+
+/*********** Card ***********/
+.card img {
+    height: 11rem;
+}
+.card .card-body {
+    min-height: 12rem;
+}
+/****************************/
+
+/********** Footer **********/
+footer {
+    padding: 3rem 0 !important;
+	color: #FFF;
+	background-color: #3D405B
+}
+footer ul li {
+    font-size: 1.4rem
+}
+/****************************/

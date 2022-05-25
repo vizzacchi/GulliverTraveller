@@ -54,10 +54,6 @@ html{
     margin: 5px;
 }
 
-.cards__title{
-    text-align: center;
-}
-
 /********** Header **********/
 .navbar.bg-blue {
     background-color: #3D405B !important
@@ -81,6 +77,12 @@ article {
 /****************************/
 
 /*********** Card ***********/
+.cards{
+    margin-bottom: 5rem;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .card img {
     height: 10rem
 }
@@ -90,6 +92,16 @@ article {
 }
 .card .card-body p {
 	font-size: .9rem
+}
+.cards-link{
+    text-decoration: none;
+    color: #3D405B;
+    font-weight: 700;
+}
+.cards-link:hover,:focus{
+    text-decoration: underline;
+    color: #e07a5f;
+    transition: 0.5s;
 }
 /****************************/
 
@@ -103,3 +115,17 @@ footer ul li {
     font-size: 1.4rem
 }
 /****************************/
+@media(max-width:576px){
+
+    .navegacao{
+        background-color: #F2CC8F;
+        width: 80%;
+        height: 190px;
+        border-radius: 5px;
+        position: relative;
+        top:-90px;
+        z-index: 10;
+    }
+
+
+}

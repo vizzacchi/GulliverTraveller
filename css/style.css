@@ -1,41 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
-html{
+
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
-.carousel__desc{
+
+.navegacao {
     position: relative;
-    top:-80px;
-    z-index: 2;
-    color: #e07a5f;
-}
-.header__titulo{
-    color: #3D405B;
-}
-.corousel__header{
-    height: 240px;
-}
-.navegacao{
-    background-color: #F2CC8F;
     width: 960px;
-    height: 160px;
+    height: 200px;
+    top: -7rem;
+    background-color: #F2CC8F;
     border-radius: 5px;
-    position: relative;
-    top:-40px;
     z-index: 10;
 }
-.navegacao__title{
+.navegacao__title {
     font-weight: 700;
 }
-.navegacao__btn{
+.navegacao__btn {
     background-color: #3D405B;
     color:#ffffff;
 }
-.form__pesquisar{
-    position: absolute;
-    bottom: 60px;
-}
-.pesquisar{
+.pesquisar {
     width:60%;
     border-radius: 15px;
     padding-left: 50px;
@@ -43,15 +29,6 @@ html{
     background-position: 10px center;
     background-image: url(../images/lupa.png);
     background-size: 1.5vw;
-}
-.header__menu{
-    background-color: #3D405B;
-    color: #ffffff;
-    width: 100%;
-    height: 70px;
-}
-.cotacoes{
-    margin: 5px;
 }
 
 /********** Header **********/
@@ -66,21 +43,53 @@ html{
 	color: #E07A5F
 }
 /****************************/
-/********* Articles *********/
-article {
-    margin-top: 4.6rem;
-    padding: 2rem 0 4rem 0
-}
 
+/*********** Main ***********/
+main.main-home > section {
+    margin-top: 4rem
+}
+main.main-home > section > .carousel > .carousel-inner > .carousel-item {
+	height: 55vh
+}
+main.main-page {
+    margin-top: 4rem;
+    padding-top: 2rem;
+	padding-bottom: 2rem
+}
+/****************************/
+
+/********* Articles *********/
+article.article-index {
+	height: 100vh;
+	margin-top: 0;
+	background-image: url('../images/fundo_2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat
+}
+article.article-index > section {
+	height: 100vh;
+	text-align: center
+}
+article.article-index > section > img {
+	width: 60%
+}
+article.article-index > section .form-control  {
+	width: 60%
+}
+article.article-home-content {
+    padding-top: 2rem;
+	padding-bottom: 2rem
+}
+article.article-home-content {
+    margin-top: -5rem;
+}
 
 /****************************/
 
 /*********** Card ***********/
-.cards{
-    margin-bottom: 5rem;
-}
-.card{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
 }
 .card img {
     height: 10rem
@@ -92,15 +101,26 @@ article {
 .card .card-body p {
 	font-size: .9rem
 }
-.cards-link{
+.cards-link {
     text-decoration: none;
     color: #3D405B;
     font-weight: 700;
 }
-.cards-link:hover,:focus{
-    text-decoration: underline;
-    color: #e07a5f;
-    transition: 0.5s;
+/****************************/
+
+/******* Google Maps *******/
+.map-responsive {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden
+}
+.map-responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0
 }
 /****************************/
 
@@ -114,17 +134,16 @@ footer ul li {
     font-size: 1.4rem
 }
 /****************************/
-@media(max-width:576px){
+
+@media(max-width:576px) {
 
     .navegacao{
-        background-color: #F2CC8F;
+        position: relative;
         width: 80%;
         height: 190px;
-        border-radius: 5px;
-        position: relative;
         top:-90px;
-        z-index: 10;
+        background-color: #F2CC8F;
+        border-radius: 5px;
+        z-index: 10
     }
-
-
 }

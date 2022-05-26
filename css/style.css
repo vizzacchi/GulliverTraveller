@@ -9,7 +9,7 @@ html {
     position: relative;
     width: 960px;
     height: 200px;
-    top: -7rem;
+    top: -4rem;
     background-color: #F2CC8F;
     border-radius: 5px;
     z-index: 10;
@@ -22,7 +22,6 @@ html {
     color:#ffffff;
 }
 .pesquisar {
-    width:60%;
     border-radius: 15px;
     padding-left: 50px;
     background-repeat: no-repeat;
@@ -140,10 +139,13 @@ footer ul li {
     .navegacao{
         position: relative;
         width: 80%;
-        height: 190px;
-        top:-90px;
+        height: 220px;
+        top:-16rem;
         background-color: #F2CC8F;
         border-radius: 5px;
         z-index: 10
+    }
+    article.article-home-content {
+       margin-top: -15rem;
     }
 }

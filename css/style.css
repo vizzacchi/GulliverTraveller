@@ -9,7 +9,7 @@ html {
     position: relative;
     width: 960px;
     height: 200px;
-    top: -4rem;
+    top: -5rem;
     background-color: #F2CC8F;
     border-radius: 5px;
     z-index: 10;
@@ -32,28 +32,28 @@ html {
 
 /********** Header **********/
 .navbar.bg-blue {
-    background-color: #3D405B !important
+    background-color: #3D405B !important;
 }
 .navbar .navbar-brand img {
 	width: 4rem;
 }
 .navbar .nav-item.login i {
     font-size: 2.4rem;
-	color: #E07A5F
+	color: #E07A5F;
 }
 /****************************/
 
 /*********** Main ***********/
 main.main-home > section {
-    margin-top: 4rem
+    margin-top: 4rem;
 }
 main.main-home > section > .carousel > .carousel-inner > .carousel-item {
-	height: 55vh
+	height: 55vh;
 }
 main.main-page {
     margin-top: 4rem;
     padding-top: 2rem;
-	padding-bottom: 2rem
+	padding-bottom: 2rem;
 }
 /****************************/
 
@@ -64,62 +64,69 @@ article.article-index {
 	background-image: url('../images/fundo_2.jpg');
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
 }
 article.article-index > section {
 	height: 100vh;
-	text-align: center
+	text-align: center;
 }
 article.article-index > section > img {
-	width: 60%
+	width: 60%;
 }
 article.article-index > section .form-control  {
-	width: 60%
+	width: 60%;
 }
 article.article-home-content {
     padding-top: 2rem;
-	padding-bottom: 2rem
+	padding-bottom: 2rem;
 }
 article.article-home-content {
-    margin-top: -5rem;
+    margin-top: -4rem;
 }
 
 /****************************/
 
 /*********** Card ***********/
 .card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .card img {
-    height: 10rem
+    height: 10rem;
 }
 .card .card-body h5 {
 	font-size: 1rem;
-	font-weight: 700
+	font-weight: 700;
 }
 .card .card-body p {
-	font-size: .9rem
+	font-size: .9rem;
 }
 .cards-link {
     text-decoration: none;
     color: #3D405B;
     font-weight: 700;
 }
+.reserva{
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
 /****************************/
-
+.text-left{
+    text-align: justify;
+}
 /******* Google Maps *******/
 .map-responsive {
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
-    overflow: hidden
+    overflow: hidden;
 }
 .map-responsive iframe {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    top: 0
+    top: 0;
 }
 /****************************/
 
@@ -127,10 +134,10 @@ article.article-home-content {
 footer {
     padding: 3rem 0 !important;
 	color: #3D405B;
-	background-color: #F2CC8F
+	background-color: #F2CC8F;
 }
 footer ul li {
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
 /****************************/
 

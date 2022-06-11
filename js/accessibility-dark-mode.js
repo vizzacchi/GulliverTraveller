@@ -17,6 +17,7 @@ function diminui(){
 function dislexia(){
     let el = document.querySelector('html');
     // alterando uma propriedade
-    el.style.fontFamily  = 'FontNova';
+    el.style.fontFamily  = 'Douglas';
     el.style.fontSize    = '15px';
+    alert("passei, mas não alterei");
 }

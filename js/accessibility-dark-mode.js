@@ -16,6 +16,7 @@ function diminui(){
 }
 
 function dislexia(){
+    alert("cheguei");
     let el = document.querySelector('html');
     // alterando uma propriedade
     el.style.fontFamily  = 'Douglas';

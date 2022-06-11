@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 @font-face {
-    font-family: Dislexia;
+    font-family: FontNova;
     src: url("../fonts/OpenDyslexicAlta-Regular.otf");
 }
 
@@ -145,7 +145,7 @@ article.article-home {
 .card {
     background-color: var(--body-background-card);
     box-shadow: var(--body-box-shadow);
-    height: 26rem;
+    height: 27rem;
 }
 .card img {
     height: 10rem;

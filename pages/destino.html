@@ -13,6 +13,7 @@
 		
 		<!----- Icons ----->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <header>
@@ -22,8 +23,7 @@
                         <img src="../images/GulliverTravellerMenu.png" alt="Logo Gulliver Traveller">
                     </a>
                     <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
@@ -38,9 +38,29 @@
                             <li class="nav-item"><a href="" class="nav-link disabled">Vida noturna</a></li>
                         </ul>
                     </div>
+
+                    <!--- Accessibility --->
+                    <div class="nav-item ps-2 pe-2">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-info dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <i class="fab fa-accessible-icon"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
+                                <li class="dropdown-item dark-theme">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="chk">
+                                        <label class="form-check-label" for="chk">Contraste</label>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="dropdown-item"><i class="bi bi-zoom-in text-end pe-1"></i> Tamanho Fonte</a></li>
+                                <li><a href="#" class="dropdown-item"><i class="bi bi-type pe-1"></i> Tipo Fonte</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!------- Login ------->
                     <div class="nav-item login ps-3 pe-3">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                            aria-controls="offcanvasNavbar">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <i class="bi bi-person-circle"></i>
                         </a>
                     </div>
@@ -51,27 +71,23 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Login</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                aria-selected="true">Entrar</button>
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Entrar</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                                aria-selected="false">Cadastre-se</button>
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cadastre-se</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
 
                         <!------ Sign in ------>
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <form method="" action="" autocomplete="off">
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="floatingInput"
@@ -93,18 +109,15 @@
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <form method="" action="" autocomplete="off">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="Usuário"
-                                        value="user">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Usuário" value="user">
                                     <label for="floatingInput">User</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com" value="name@example.com">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
                                     <label for="floatingInput">Email address</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
-                                        value="123456">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
                                     <label for="floatingPassword">Password</label>
                                 </div>
                                 <div class="text-end">
@@ -116,12 +129,10 @@
                 </div>
             </div>
         </header>
-
-        <!--------- Main --------->
         <main class="main-home">
 
             <!--- início Carousel --->
-			<section>
+			<section class="section-home">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
@@ -144,42 +155,66 @@
                     </button>
                 </div>
 
-                <!--- Navegação pesquisa de passagens --->
-                <div class="d-flex justify-content-center">
-                    <div class="navegacao d-flex align-items-center justify-content-around">
-                        <form method="" action="hoteis.html">
-                            <div class="row m-3">
-                                <div class="col-6 col-md-6 col-lg-3">
-                                    <label for="origem" class="form-label navegacao__title">Origem</label>
-                                    <input type="text" id="origem" name="origem" class="form-control" placeholder="Ex.: Rio de Janeiro">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-3">
-                                    <label for="destino" class="form-label navegacao__title">Destino</label>
-                                    <input type="text" id="destino" name="destino" class="form-control" value="São Paulo" readonly>
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-3">
-                                    <label for="ida" class="form-label navegacao__title">Data Ida</label>
-                                    <input type="date" id="ida" name="ida" class="form-control">
-                                </div>
-                                <div class="col-6 col-md-6 col-lg-3">
-                                    <label for="volta" class="form-label navegacao__title">Data Volta</label>
-                                    <input type="date" id="volta" name="volta" class="form-control">
+                <div class="container">
+                    <form method="" action="hoteis.html" class="form-busca-destino">
+
+                        <!----- Tipo Viagens ----->
+                        <h4>Selecione o tipo de viagem:</h4>
+                        <div class="mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipoTrabalho">
+                                <label class="form-check-label" for="tipoTrabalho">Trabalho</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipoNegocio">
+                                <label class="form-check-label" for="tipoNegocio">Negócio</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="tipoTurismo">
+                                <label class="form-check-label" for="tipoTurismo">Turismo</label>
+                            </div>
+                        </div>
+
+                        <!----- Input Buscar ----->
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-4">
+                            <div class="col mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="origem" value="São Paulo" readonly>
+                                    <label for="origem">Origem</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="d-flex justify-content-end">
-                                    <input type="submit" class="btn btn-primary mx-4" value="BUSCAR">
+                            <div class="col mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="destino" value="São Paulo" readonly>
+                                    <label for="destino">Destino</label>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col mb-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="data_ida">
+                                    <label for="data_ida">Data Ida</label>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="data_volta">
+                                    <label for="data_volta">Data Volta</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!----- Botão Buscar ----->
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" class="btn btn-primary btn-lg" value="BUSCAR">
+                        </div>
+                    </form>
                 </div>
             </section>
             
             <!------- Article ------->
-            <article class="article-home-content container">
+            <article class="article-home container">
                 <section>
-                    <h1>Explore São Paulo</h1>
+                    <h1><strong>SÃO PAULO</strong></h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -196,10 +231,11 @@
                                 <img src="../images/destinoSP/Hospedagens.jpg" class="card-img-top" alt="Foto de um quarto de hotel aconchegante">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Melhores Hospedagens</h5>
+                                <h5 class="card-title text-center fw-bold">Melhores Hospedagens</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        Veja os <a href="../pages/hoteis.html" class="cards-link">hotéis</a> em destaque na cidade de São Paulo, explore suas acomodações e serviços.
+                                    <p>
+                                        Veja os <a href="../pages/hoteis.html" class="cards-link">hotéis</a> 
+                                        em destaque na cidade de São Paulo, explore suas acomodações e serviços.
                                     </p>
                                 </div>
                             </div>
@@ -211,10 +247,11 @@
                                 <img src="../images/destinoSP/Gastronomia.jpg" class="card-img-top" alt="Um chefe de cozinha preparando um belo prato">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Destaques Gastronomicos</h5>
+                                <h5 class="card-title text-center fw-bold">Destaques Gastronomicos</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        São Paulo impressiona qualquer visitante pela diversidade de sua <a href="" class="cards-link">gastronomia</a>, veja os restaurantes em destaque.
+                                    <p>
+                                        São Paulo impressiona qualquer visitante pela diversidade de sua
+                                        <a href="" class="cards-link">gastronomia</a>, veja os restaurantes em destaque.
                                     </p>
                                 </div>
                             </div>
@@ -226,10 +263,11 @@
                                 <img src="../images/destinoSP/Roteiros.jpg" class="card-img-top" alt="Um mapa aberto com fotos tiradas em diversos passeios.">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Roteiros em Alta</h5>
+                                <h5 class="card-title text-center fw-bold">Roteiros em Alta</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        Veja alguns <a href="" class="cards-link">passeios</a> da cidade de São Paulo em destaque, roteiros exclusivos para parceiros Gulliver Traveller. 
+                                    <p>
+                                        Veja alguns <a href="" class="cards-link">passeios</a> da cidade de São Paulo em destaque,
+                                        roteiros exclusivos para parceiros Gulliver Traveller. 
                                     </p>
                                 </div>
                             </div>
@@ -241,10 +279,11 @@
                                 <img src="../images/destinoSP/FestasNoturnas.jpg" class="card-img-top" alt="Pessoas curtindo uma festa em uma casa noturna">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Vida Noturna e Entretenimento</h5>
+                                <h5 class="card-title text-center fw-bold">Vida Noturna e Entretenimento</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        São Paulo a cidade que não dorme, possui uma noite vibrante com as melhores <a href="" class="cards-link">casas noturnas</a> do país.
+                                    <p>
+                                        São Paulo a cidade que não dorme, possui uma noite vibrante com as melhores
+                                        <a href="" class="cards-link">casas noturnas</a> do país.
                                     </p>
                                 </div>
                             </div>
@@ -256,10 +295,11 @@
                                 <img src="../images/destinoSP/Dicas.jpg" class="card-img-top" alt="Um mapa mundo com fundo preto, com um avião miniatura sendo empurrado por uma mão">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Dicas Para Qualquer Viagem</h5>
+                                <h5 class="card-title text-center fw-bold">Dicas Para Qualquer Viagem</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        Planeje sua viagem com segurança com nossas <a href="" class="cards-link">dicas</a> e experiência de outros usuários que visitaram a cidade de São Paulo.
+                                    <p>
+                                        Planeje sua viagem com segurança com nossas <a href="" class="cards-link">dicas</a>
+                                        e experiência de outros usuários que visitaram a cidade de São Paulo.
                                     </p>
                                 </div>
                             </div>
@@ -271,10 +311,11 @@
                                 <img src="../images/destinoSP/Cultura.jpg" class="card-img-top" alt="Pintura de um rosto indigena num grafite de rua.">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Passeios Culturais</h5>
+                                <h5 class="card-title text-center fw-bold">Passeios Culturais</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        São Paulo é uma <a href="" class="cards-link">cidade multi-cultural</a>, de museus as mais diversificadas feiras e exposições, explore.
+                                    <p>
+                                        São Paulo é uma <a href="" class="cards-link">cidade multi-cultural</a>,
+                                        de museus as mais diversificadas feiras e exposições, explore.
                                     </p>
                                 </div>
                             </div>
@@ -286,10 +327,11 @@
                                 <img src="../images/destinoSP/aluguelCarros.jpg" class="card-img-top" alt="Carros da mercedes enfileirados a 45 graus">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Aluguel de Carro</h5>
+                                <h5 class="card-title text-center fw-bold">Aluguel de Carro</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        De carros populares a super esportivos, veja as principais <a href="" class="cards-link"> locadoras</a> de veículos da cidade de São Paulo. 
+                                    <p>
+                                        De carros populares a super esportivos, veja as principais
+                                        <a href="" class="cards-link"> locadoras</a> de veículos da cidade de São Paulo. 
                                     </p>
                                 </div>
                             </div>
@@ -301,10 +343,12 @@
                                 <img src="../images/destinoSP/parquesdeSP.jpg" class="card-img-top" alt="Foto de um belo parque com um lago ao fundo de folhas vermelhas">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Parques</h5>
+                                <h5 class="card-title text-center fw-bold">Parques</h5>
                                 <div class="card-text">
-                                    <p class="address">
-                                        Seja para dar uma caminhada, fazer um belo piqui-nique ou apenas para relaxar embaixo de uma árvore, São Paulo oferece diversos <a href="" class="cards-link">parques</a>.
+                                    <p>
+                                        Seja para dar uma caminhada,
+                                        fazer um belo piqui-nique ou apenas para relaxar embaixo de uma árvore,
+                                        São Paulo oferece diversos <a href="" class="cards-link">parques</a>.
                                     </p>
                                 </div>
                             </div>
@@ -341,10 +385,11 @@
             </div>
         </footer>
 
-        <!---- JavaScript ---->
+        <!------ JavaScript ------>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-         <!-- Tradutor de Libras -->
+
+         <!---- Accessibility ---->
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -352,8 +397,7 @@
             </div>
         </div>
         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
+        <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+        <script type="text/javascript" src="../js/accessibility-dark-mode.js"></script>
     </body>
 </html>

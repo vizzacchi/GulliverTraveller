@@ -1,35 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
+/******** Dark Mode ********/
+:root {
+    --body-background: #F3F5F8;
+    --body-background-buscar: #F2F3F4;
+    --body-background-card: #FFF;
+    --font-color: #3D405B;
+    --font-color-link: #3D405B;
+    --body-box-shadow: 0 8px 20px 0 rgb(158 184 209 / 43%)
+}
+.dark-mode {
+    --body-background: #1A202E;
+    --body-background-buscar: #1F2439;
+    --body-background-card: #272E48;
+    --font-color: #FFF;
+    --font-color-link: #0D6EFD;
+    --body-box-shadow: 0
+}
+/****************************/
+
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
-.navegacao {
+body {
+    background-color: var(--body-background)
+}
+/******** Dark Theme ********/
+.dark-theme .checkbox {
+    opacity: 0;
+    position: absolute
+}
+.dark-theme .checkbox:checked + .label .ball {
+    transform: translateX(24px)
+}
+.dark-theme .label {
     position: relative;
-    width: 960px;
-    height: 200px;
-    top: -5rem;
-    background-color: #F2CC8F;
-    border-radius: 5px;
-    z-index: 10;
+    width: 46px;
+    height: 22px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: scale(1.5)
 }
-.navegacao__title {
-    font-weight: 700;
+.dark-theme .label .bi-moon-fill {
+    color: #F1C40F;
 }
-.navegacao__btn {
-    background-color: #3D405B;
-    color:#ffffff;
+.dark-theme .label .bi-brightness-high-fill {
+    color: #F39C12;
 }
-.pesquisar {
-    width: 80%;
-    border-radius: 15px;
-    padding-left: 35px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-image: url(../images/lupa.png);
-    background-size: 1.5vw;
+.dark-theme .label .ball {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 2px;
+    background-color: #FFF;
+    border-radius: 50%;
+    transform: translateX(0px);
+    transition: transform 0.2s linear
 }
+/****************************/
 
 /********** Header **********/
 .navbar.bg-blue {
@@ -45,16 +81,30 @@ html {
 /****************************/
 
 /*********** Main ***********/
-main.main-home > section {
-    margin-top: 4rem;
-}
-main.main-home > section > .carousel > .carousel-inner > .carousel-item {
-	height: 55vh;
-}
 main.main-page {
     margin-top: 4rem;
     padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 2rem
+}
+/****************************/
+
+/********* Sections *********/
+section h1, h4 {
+    color: var(--font-color)
+}
+section.section-home {
+    margin-top: 4rem;
+}
+section.section-home > .carousel > .carousel-inner > .carousel-item {
+	height: 55vh;
+}
+section.section-home .form-busca-destino {
+    position: relative;
+    margin-top: -5rem;
+    padding: 2rem;
+    background-color: #F2CC8F;
+    border-radius: 5px;
+    box-shadow: var(--body-box-shadow)
 }
 /****************************/
 
@@ -74,48 +124,62 @@ article.article-index > section {
 article.article-index > section > img {
 	width: 60%;
 }
-article.article-index > section .form-control  {
-	width: 60%;
+article.article-index > section .pesquisar {
+    width: 80%;
+    border-radius: 15px;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-image: url(../images/lupa.png);
+    background-size: 1.5vw;
 }
-article.article-home-content {
+article.article-home {
     padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-article.article-home-content {
-    margin-top: -4rem;
-}
-
 /****************************/
 
 /*********** Card ***********/
 .card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--body-background-card);
+    box-shadow: var(--body-box-shadow)
 }
 .card img {
     height: 10rem;
 }
-.card .card-body h5 {
-	font-size: 1rem;
-	font-weight: 700;
+.card .card-body h5, p {
+	color: var(--font-color);
+    font-size: 15px
 }
-.card .card-body p {
-	font-size: .9rem;
-}
-.cards-link {
+.card .card-body .cards-link {
     text-decoration: none;
-    color: #3D405B;
-    font-weight: 700;
+    color: var(--font-color-link);
+    font-weight: 700
 }
-.reserva{
+.reserva {
     position: absolute;
     bottom: 10px;
-    width: 90%;
+    width: 90%
 }
 /****************************/
-.text-left{
-    text-align: justify;
+
+/********* Offcanva *********/
+.offcanvas {
+    background-color: var(--body-background-card)
 }
-/******* Google Maps *******/
+
+.offcanvas .offcanvas-header h5 {
+    color: var(--font-color)
+}
+/****************************/
+
+/*********** Text ***********/
+.text-left {
+    text-align: justify
+}
+/****************************/
+
+/******** Google Map ********/
 .map-responsive {
     position: relative;
     height: 0;
@@ -134,11 +198,13 @@ article.article-home-content {
 /********** Footer **********/
 footer {
     padding: 3rem 0 !important;
-	color: #3D405B;
-	background-color: #F2CC8F;
+	background-color: #F2CC8F
+}
+footer p, h5 {
+    color: #3D405B
 }
 footer ul li {
-    font-size: 1.4rem;
+    font-size: 1.4rem
 }
 /****************************/
 
@@ -154,16 +220,11 @@ footer ul li {
         background-size: 3.5vw;
 
     }
-    .navegacao{
-        position: relative;
-        width: 80%;
-        height: 220px;
-        top:-16rem;
-        background-color: #F2CC8F;
-        border-radius: 5px;
-        z-index: 10
+
+    section.section-home > .carousel {
+        display: none
     }
-    article.article-home-content {
-       margin-top: -15rem;
+    section.section-home .form-busca-destino {
+        margin-top: 6rem
     }
 }

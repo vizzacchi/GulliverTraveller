@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: Dislexia;
+    src: url("../fonts/OpenDyslexicAlta-Regular.otf");
+}
 
 /******** Dark Mode ********/
 :root {
@@ -18,12 +22,10 @@
     --body-box-shadow: 0
 }
 /****************************/
-
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
-
 body {
     background-color: var(--body-background)
 }
@@ -142,40 +144,41 @@ article.article-home {
 /*********** Card ***********/
 .card {
     background-color: var(--body-background-card);
-    box-shadow: var(--body-box-shadow)
+    box-shadow: var(--body-box-shadow);
+    height: 26rem;
 }
 .card img {
     height: 10rem;
 }
 .card .card-body h5, p {
 	color: var(--font-color);
-    font-size: 15px
+    font-size: 1rem;
 }
 .card .card-body .cards-link {
     text-decoration: none;
     color: var(--font-color-link);
-    font-weight: 700
+    font-weight: 700;
 }
 .reserva {
     position: absolute;
     bottom: 10px;
-    width: 90%
+    width: 90%;
 }
 /****************************/
 
 /********* Offcanva *********/
 .offcanvas {
-    background-color: var(--body-background-card)
+    background-color: var(--body-background-card);
 }
 
 .offcanvas .offcanvas-header h5 {
-    color: var(--font-color)
+    color: var(--font-color);
 }
 /****************************/
 
 /*********** Text ***********/
 .text-left {
-    text-align: justify
+    text-align: justify;
 }
 /****************************/
 
@@ -198,13 +201,13 @@ article.article-home {
 /********** Footer **********/
 footer {
     padding: 3rem 0 !important;
-	background-color: #F2CC8F
+	background-color: #F2CC8F;
 }
 footer p, h5 {
-    color: #3D405B
+    color: #3D405B;
 }
 footer ul li {
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
 /****************************/
 
@@ -222,9 +225,9 @@ footer ul li {
     }
 
     section.section-home > .carousel {
-        display: none
+        display: none;
     }
     section.section-home .form-busca-destino {
-        margin-top: 6rem
+        margin-top: 6rem;
     }
 }

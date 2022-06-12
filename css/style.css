@@ -145,6 +145,8 @@ article.article-home {
 .card {
     background-color: var(--body-background-card);
     box-shadow: var(--body-box-shadow);
+}
+.card .list {
     height: 27rem;
 }
 .card img {

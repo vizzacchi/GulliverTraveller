@@ -144,25 +144,21 @@ article.article-home {
     background-color: var(--body-background-card);
     box-shadow: var(--body-box-shadow);
 }
-.card .list {
-    height: 27rem;
-}
 .card img {
-    height: 10rem;
+    height: 9rem;
 }
 .card .card-body h5, p {
 	color: var(--font-color);
-    font-size: 1rem;
+    font-size: .9rem
 }
 .card .card-body .cards-link {
     text-decoration: none;
     color: var(--font-color-link);
-    font-weight: 700;
+    font-weight: 700
 }
 .reserva {
-    position: absolute;
-    bottom: 10px;
-    width: 90%;
+	width: 100%;
+    padding: 0 1rem 1rem 1rem
 }
 /****************************/
 

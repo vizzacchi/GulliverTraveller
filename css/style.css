@@ -89,7 +89,7 @@ main.main-page {
 /****************************/
 
 /********* Sections *********/
-section h1, h4, label {
+section h1, h4, h5, h6, label {
     color: var(--font-color)
 }
 section.section-home {
@@ -109,6 +109,10 @@ section.section-home .form-busca-destino {
 /****************************/
 
 /********* Articles *********/
+article table tbody tr td {
+	color: var(--font-color)	
+}
+
 article.article-index {
 	height: 100vh;
 	margin-top: 0;
@@ -145,7 +149,7 @@ article.article-home {
     box-shadow: var(--body-box-shadow);
 }
 .card img {
-    height: 9rem;
+    height: 9rem
 }
 .card .card-body h5, p {
 	color: var(--font-color);
@@ -164,11 +168,11 @@ article.article-home {
 
 /********* Offcanva *********/
 .offcanvas {
-    background-color: var(--body-background-card);
+    background-color: var(--body-background-card)
 }
 
 .offcanvas .offcanvas-header h5 {
-    color: var(--font-color);
+    color: var(--font-color)
 }
 /****************************/
 
@@ -191,6 +195,18 @@ article.article-home {
     height: 100%;
     left: 0;
     top: 0;
+}
+/****************************/
+
+/*********** Modal **********/
+.modal .modal-body {
+	background-color: var(--body-background)
+}
+.modal .modal-body > .border {
+	background-color: var(--body-background)
+}
+.modal .modal-body > .border h5 {
+	color: var(--font-color)
 }
 /****************************/
 

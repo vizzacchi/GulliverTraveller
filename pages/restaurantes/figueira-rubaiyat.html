@@ -40,22 +40,25 @@
 
 					<!--- Accessibility --->
 					<div class="nav-item ps-2 pe-2">
-						<div class="btn-group">
-							<button type="button" class="btn btn-outline-info dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-								<i class="fab fa-accessible-icon"></i>
-							</button>
-							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
-								<li class="dropdown-item dark-theme">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="chk">
-										<label class="form-check-label" for="chk">Contraste</label>
-									</div>
-								</li>
-								<li><a href="#" class="dropdown-item"><i class="bi bi-zoom-in text-end pe-1"></i> Tamanho Fonte</a></li>
-								<li><a href="#" class="dropdown-item"><i class="bi bi-type pe-1"></i> Tipo Fonte</a></li>
-							</ul>
-						</div>
-					</div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-info dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <i class="fab fa-accessible-icon"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
+                                <li class="dropdown-item dark-theme">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="chk">
+                                        <label class="form-check-label" for="chk">Contraste</label>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="dropdown-item" onclick="aumenta()"><i class="bi bi-zoom-in text-end pe-1"></i> 
+                                        Aumenta Fonte</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="diminui()"><i class="bi bi-zoom-out text-end pe-1"></i>
+                                        Diminui Fonte</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="dislexia()"><i class="bi bi-type pe-1"></i> Tipo Fonte</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
 					<!------- Login ------->
 					<div class="nav-item login ps-3 pe-3">
@@ -135,8 +138,8 @@
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
 						<li class="breadcrumb-item"><a href="../destino.html">Destino</a></li>
-						<li class="breadcrumb-item"><a href="../gastronomia.html">Gastronomia</a></li>
-						<li class="breadcrumb-item active" aria-current="page">D.O.M</li>
+						<li class="breadcrumb-item"><a href="../restaurantes.html">Gastronomia</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Figueira Rubaiyat</li>
 					</ol>
 				</nav>
 			</section>
@@ -145,24 +148,31 @@
 				
 					<!------- Descrição ------->
 					<p class="text-left">
-                        “A gastronomia brasileira é um sonho viável.”
-                        A frase do chef Alex Atala sintetiza a trajetóriado restaurante D.O.M.
-                        Criado em uma época na qual havia pouco conhecimento sobre os sabores do Brasil,
-                        o D.O.M. nasceu projeto e hoje é realidade.
-                        Uma realidade genuína que reverbera por todo o mundo difundindo ingredientes como açaí,
-                        jambu e tucupi. Não por imodéstia... por missão.
+						Almoçar ou jantar sob um patrimônio da cidade, a centenária figueira que dá nome ao restaurante,
+						é uma experiência única. A casa, que se tornou um ícone,
+						conta com amplos espaços para refeições de negócios,
+						comemoração de datas especiais e até mesmo eventos corporativos.
                     </p>
-                    <p class="text-left">
-                        Detentor de duas estrelas no prestigiado Guia Michelin, o D.O.M. é um restaurante singular,
-                        sem pretensão de ser eloquente. Ao contrário,
-                        sua mensagem é sintática e pungente: sair da zona de conforto e propor uma nova experiência gastronômica,
-                        resgatando os sabores mais autênticos da cozinha brasileira sob um olhar contemporâneo.
+					<p class="text-left">
+						Assim como as demais casas do grupo, da cozinha envidraçada saem pratos do menu com toques mediterrâneos e
+						ingredientes frescos da mais alta qualidade, além das carnes da Fazenda Rubaiyat – segundo a revista Veja SP,
+						a melhor carne da cidade.
 					</p>
-
+					<p class="text-left">
+						O restaurante conta também com um bar, com excelente carta de drinks,
+						cervejas especiais e centenas de vinhos da cada vez mais famosa adega da casa,
+						com centenas de rótulos de 12 países, selecionados pelos sommeliers do grupo.
+                    </p>					
+					<p class="text-left">
+						Aos sábados, a casa se transforma num ponto turístico para os visitantes nacionais e estrangeiros que estão na cidade,
+						ao oferecer um exuberante buffet do nosso patrimônio gastronômico: a feijoada.
+						Imperdível, para dizer o mínimo.
+                    </p>					
+					
 					<!------ Avaliações ------>
 					<div class="row mb-4">
 						<div class="col-md-6">
-							<h6>4.852 avaliações, nota 4/5 estrelas</h6>
+							<h6>7.167 avaliações, nota 4,6 estrelas</h6>
 							<div class="card-rate">
 								<i class="bi bi-star-fill text-warning"></i>
 								<i class="bi bi-star-fill text-warning"></i>
@@ -201,10 +211,10 @@
 											</div>
 										</div>
 										<p>
-											De fato uma das experiências gastronômicas mais incríveis de São Paulo.
-											Um restaurante único com ingredientes brasileiros que confundem nosso paladar e mente.
-											Atendimento de primeira linha e com muita atenção e informação durante a apresentação dos pratos.
-											Um menu degustação de alto nível pra quem procura uma nova experiência gastronômica.
+											Restaurante bem tradicional, localizado na Rua Haddock Lobo. Há uma enorme figueira que ambienta o local.
+											O atendimento é muito cortês e a comida muito boa. Há opção de executivo,
+											com entrada, prato principal e sobremesa (consultar opção do dia) Há pratos a la carte tb.
+											Há uma vasta carta de bebidas. Gostei!
 										</p>
 									</div>
 									<div class="border p-3 mb-3">
@@ -221,13 +231,15 @@
 											</div>
 										</div>
 										<p>
-											Nossa experiência no Dom foi muito boa.
-											Já tinhamos ido em vários restaurantes estrela Michelin então a expectativa era alta.
-											Com certeza um dos melhores que fomos e está no top 3.
-											Nós agradou muito a escolha dos vinhos e os pratos de fato são bem inusitados.
-											Fizemos a opção normal para o menu desgustacao mas é possível pedir o menu vegetariano e
-											para as pessoas que tem restrição dá pra alterar os pratos pedidos.Recomendado muito pra todos.
-											A noite foi muito romântica.
+											Restaurante elitizado. Estrutura física espaçosa, arejada e bem iluminada por luz natural. Mesas e cadeiras confortáveis.
+											Mobílias e decoração diferentes e muito bonitas.
+											Muita opção de pratos e bebidas (entradas, executivos e sobremesas, drinks e demais opções alcoólicas e não alcoólicas).
+											Atendimento da recepção, pelo volume de pessoas (acredito), ficou um pouco a desejar.
+											Além de que tivemos que esperar por uma média de 40mim à 80min para liberarem mesa... E quando houve a liberação,
+											não fomos avisados pelo sistema do restaurante que envia um SMS para o celular cadastrado de nós clientes - pelo contrário,
+											recebemos apenas uma mensagem informando que nossa reserva havia sido "removida da lista de espera" (disseram que estava com problemas).
+											Já o atendimento do garçom Henrique foi ótimo. Atencioso e muito bem informado de todas as opções disponíveis no Menu. Por fim,
+											tivemos uma experiência incrível... Do atendimento aos sabores e espaço agradável. Quero voltar para curtir a noite ❤️
 										</p>
 									</div>
 									<div class="border p-3 mb-3">
@@ -244,8 +256,8 @@
 											</div>
 										</div>
 										<p>
-											Um dos melhores do mundo! Com toda certeza, o ambiente, o serviço,
-											as pessoas e a comida é surreal de boa 👏🏻, voltaremos mais vezes com toda certeza!!!
+											O restaurante é um show a parte,  lindíssimo, o atendimento é ótimo quem tem cartão Black Mastercard não paga rolha.
+											A carne é perfeita, o preço médio por pessoa é 250 reais.
 										</p>
 									</div>
 								</div>
@@ -260,52 +272,50 @@
 					<table class="table">
 						<tbody>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-telephone mx-2"></i> Telefone</td>
-								<td class="text-end">(11) 96918-9947</td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+								<td class="text-end">(11) 3087-1399</td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-display mx-2"></i> Site</td>
-								<td class="text-end"><a href="http://domrestaurante.com.br/pt-br/home.html" target="_black">http://domrestaurante.com.br/pt-br/home.html</a></td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+								<td class="text-end"><a href="http://www.gruporubaiyat.com" target="_black">http://www.gruporubaiyat.com</a></td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="fas fa-utensils mx-2"></i> Refeição no local</td>
+								<td class="fw-bold text-nowrap"><i class="fas fa-utensils mx-2"></i> Refeição no local</td>
 								<td class="text-end"><i class="bi bi-check text-success"></i></td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-truck mx-2"></i> Entrega</td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-truck mx-2"></i> Entrega</td>
 								<td class="text-end"><i class="bi bi-check text-success"></i></td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="fas fa-car mx-2"></i>Estacionamento</td>
+								<td class="fw-bold text-nowrap"><i class="fas fa-car mx-2"></i>Estacionamento</td>
 								<td class="text-end"><i class="bi bi-check text-success"></i></td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-shop mx-2"></i> Tipo de culinária</td>
-								<td class="text-end">Brasileira</td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-shop mx-2"></i> Tipo de culinária</td>
+								<td class="text-end">Steakhouse, Brasileira, Churrasco, Argentina, Grelhados</td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-currency-dollar mx-2"></i> Faixa de preço</td>
-								<td class="text-end">R$150 - R$2.493</td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-currency-dollar mx-2"></i> Faixa de preço</td>
+								<td class="text-end">R$100 - R$778</td>
 							</tr>
 							<tr>
-								<td class="fw-bold"><i class="bi bi-clock mx-2"></i> Horário</td>
+								<td class="fw-bold text-nowrap"><i class="bi bi-clock mx-2"></i> Horário</td>
 								<td class="text-end">
-								
 									<div class="dropdown">
 										<div class="dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<strong class="text-success">Aberto</strong> ⋅ Fecha às 21:00
+											<strong class="text-success">Aberto</strong> ⋅ Fecha às 23:00
 										</div>
 										<ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-											<li><href="#" a class="dropdown-item">12:00–15:00, 19:00–21:00 ⋅ segunda-feira</a></li>
-											<li><href="#" a class="dropdown-item">12:00–15:00, 19:00–21:00 ⋅ terça-feira</a></li>
-											<li><href="#" a class="dropdown-item">12:00–15:00, 19:00–21:00 ⋅ quarta-feira</a></li>
-											<li><href="#" a class="dropdown-item">12:00–15:00, 19:00–21:30 ⋅ quinta-feira</a></li>
-											<li><href="#" a class="dropdown-item">12:00–15:00, 19:00–21:00 ⋅ sexta-feira</a></li>
-											<li><href="#" a class="dropdown-item">07:00–21:00 ⋅ sábado</a></li>
-											<li><href="#" a class="dropdown-item">Fechado ⋅ domingo</a></li>
+											<li><href="#" a class="dropdown-item">12:00–23:00 ⋅ segunda-feira</a></li>
+											<li><href="#" a class="dropdown-item">12:00–23:00 ⋅ terça-feira</a></li>
+											<li><href="#" a class="dropdown-item">12:00–23:00 ⋅ quarta-feira</a></li>
+											<li><href="#" a class="dropdown-item">12:00–23:00 ⋅ quinta-feira</a></li>
+											<li><href="#" a class="dropdown-item">12:00–00:00 ⋅ sexta-feira</a></li>
+											<li><href="#" a class="dropdown-item">12:00–00:00 ⋅ sábado</a></li>
+											<li><href="#" a class="dropdown-item">12:00–23:00 ⋅ domingo</a></li>
 										</ul>
-									</div>
-								
+									</div>								
 								</td>
 							</tr>
 						</tbody>
@@ -319,17 +329,17 @@
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
 						<div class="col">
 							<div class="card">
-								<img src="../../images/restaurantes/dom/prato_1.jpg" class="card-img-top" alt="Prato D.O.M">
+								<img src="../../images/restaurantes/figueira_rubaiyat/prato_1.jpg" class="card-img-top" alt="Prato D.O.M">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<img src="../../images/restaurantes/dom/prato_2.jpg" class="card-img-top" alt="Prato D.O.M">
+								<img src="../../images/restaurantes/figueira_rubaiyat/prato_2.jpg" class="card-img-top" alt="Prato D.O.M">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<img src="../../images/restaurantes/dom/prato_3.jpg" class="card-img-top" alt="Prato D.O.M">
+								<img src="../../images/restaurantes/figueira_rubaiyat/prato_3.jpg" class="card-img-top" alt="Prato D.O.M">
 							</div>
 						</div>
 					</div>
@@ -337,7 +347,7 @@
 					<!------ Como Chegar ------>
 					<h4>Como Chegar:</h4>
 					<div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0591227858904!2d-46.66963868500872!3d-23.56631998468048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d6e56707fd%3A0x269955670d659e58!2sD.O.M.!5e0!3m2!1spt-BR!2sbr!4v1655076171471!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0888289488325!2d-46.671976685532506!3d-23.56525296762001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583397637bdb%3A0xcc15b6cb26a775b5!2sA%20Figueira%20Rubaiyat!5e0!3m2!1spt-BR!2sbr!4v1655144954855!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</article>

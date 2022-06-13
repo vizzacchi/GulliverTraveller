@@ -4,10 +4,6 @@
     src: url("../fonts/OpenDyslexicAlta-Regular.otf");
 }
 
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-}
 /******** Dark Mode ********/
 :root {
     --body-background: #F3F5F8;
@@ -27,6 +23,8 @@ html {
 }
 /****************************/
 body {
+    /*font-family: 'Roboto', sans-serif !important;*/
+    font-size: 15px !important;
     background-color: var(--body-background)
 }
 /******** Dark Theme ********/
@@ -91,7 +89,7 @@ main.main-page {
 /****************************/
 
 /********* Sections *********/
-section h1, h4 {
+section h1, h4, label {
     color: var(--font-color)
 }
 section.section-home {

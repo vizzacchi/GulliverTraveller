@@ -136,7 +136,7 @@
 
         <!------- Conteúdo ------->
         <main class="main-page container">
-            <section>
+            <section class="mb-4">
                 <h1>Gastronomia</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -145,63 +145,72 @@
                         <li class="breadcrumb-item active" aria-current="page">Gastronomia</li>
                     </ol>
                 </nav>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6"> 
+                                <p>São Paulo é uma cidade muito rica em Gastronomia, veja alguns números:</p>
+                                <span class="badge rounded-pill fs-6 bg-info text-dark">15 mil restaurantes</span>
+                                <span class="badge rounded-pill fs-6 bg-warning text-dark">20 mil bares</span>
+                                <span class="badge rounded-pill fs-6 bg-danger">6 mil pizzarias</span>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <form action="">
+                                    <label for="pesquise" class="h6">Filtre por tipo de culinária:</label>
+                                    <div class="input-group">
+                                        <select class="form-select" name="pesquise" id="pesquise">
+                                            <option value="">Escolha...</option>
+                                            <option value="">Bistro</option>
+                                            <option value="">Brasileira</option>
+                                            <option value="">Chinesa</option>
+                                            <option value="">Churrascaria</option>
+                                            <option value="">Comida de Buteco</option>
+                                            <option value="">Fast Food</option>
+                                            <option value="">FOOD Truck</option>
+                                            <option value="">Italiana</option>
+                                            <option value="">Japonesa</option>
+                                            <option value="">Padarias</option>
+                                            <option value="">Outras</option>
+                                        </select>
+                                        <input type="submit" class="btn btn-primary col-3" Value="Filtrar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <div class="row">
-                <div class="col-12 col-md-6"> 
-                    <p>
-                        São Paulo é uma cidade muito rica em Gastronomia, veja alguns números:
-                    </p>
-                    <ul>
-                        <li>15 mil restaurantes</li>
-                        <li>20 mil bares</li>
-                        <li>6 mil pizzarias</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <form action="">
-                        <label for="pesquise" class="h4">Filtre por tipo de culinária:</label>
-                        <select name="pesquise" id="pesquise" name="pesquise" class="form-select">
-                            <option value="">Escolha...</option>
-                            <option value="">Italiana</option>
-                            <option value="">Japonesa</option>
-                            <option value="">Chinesa</option>
-                            <option value="">Fast Food</option>
-                            <option value="">Comida de Buteco</option>
-                            <option value="">Padarias</option>
-                            <option value="">Churrascaria</option>
-                            <option value="">Bistro</option>
-                            <option value="">FOOD Truck</option>
-                            <option value="">Outras</option>
 
-                        </select>
-                        <input type="submit" class="btn btn-primary m-3" Value="Filtrar">
-                    </form>
-                </div>
-            </div>
-            <h4>Explore alguns destaques:</h4>
             <!------ Card ------>
             <article class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <div class="col d-flex">
                     <div class="card list">
-                        <a href="../pages/hoteis/blue-tree-morumbi.html">
-                            <img src="../images/hoteis/blue_tree_morumbi.jpg" class="card-img-top"
+                        <a href="../pages/gastronomia/dom.html">
+                            <img src="../images/gastronomia/dom.jpg" class="card-img-top"
                                 alt="Blue Tree Premium Morumbi">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title text-center">D.O.M.</h5>
-                            <div class="card-rate text-center">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                            <div class="card-rate text-center row mb-2">
+                                <div class="col text-start">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <div class="col text-end">
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                </div>
                             </div>
                             <div class="card-text">
                                 <p class="address">
-                                    <strong>Endereço:</strong> Rua Barão de Capanema, 549 - Jardins São Paulo . SP
+                                    <strong>Endereço:</strong> R. Barão de Capanema, 549 - Jardins, São Paulo - SP, 01411-011
                                 </p>
                                 <p class="phone">
-                                    <strong>Telefone:</strong> (11) 3088-0761
+                                    <strong>Telefone:</strong> (11) 96918-9947
                                 </p>
                                 <p>
                                     <div class="d-grid mx-auto reserva">
@@ -216,21 +225,28 @@
                 <div class="col d-flex">
                     <div class="card list">
                         <a href="../pages/hoteis/blue-tree-paulista.html">
-                            <img src="../images/hoteis/blue_tree_paulista.jpg" class="card-img-top"
+                            <img src="../images/gastronomia/figueira_rubaiyat.jpg" class="card-img-top"
                                 alt="Blue Tree Premium Paulista">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title text-center">Figueira Rubayat</h5>
-                            <div class="card-rate text-center">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                            <h5 class="card-title text-center">Figueira Rubaiyat</h5>
+                            <div class="card-rate text-center row mb-2">
+                                <div class="col text-start">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <div class="col text-end">
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                </div>
                             </div>
                             <div class="card-text">
                                 <p class="address">
-                                    <strong>Endereço:</strong> Rua Haddock Lobo 1738 Jd. Paulista, Sao Paulo
+                                    <strong>Endereço:</strong> Rua Haddock Lobo, 1738 - Jardins, São Paulo - SP, 01414-002
                                 </p>
                                 <p class="phone">
                                     <strong>Telefone:</strong> (11) 3087-1399
@@ -246,25 +262,30 @@
                 <div class="col d-flex">
                     <div class="card list">
                         <a href="../pages/hoteis/bourbon.html">
-                            <img src="../images/hoteis/bourbon_convention.jpg" class="card-img-top"
+                            <img src="../images/gastronomia/fasano.jpg" class="card-img-top"
                                 alt="Bourbon Convention Ibirapuera">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title text-center">Fasano</h5>
-                            <div class="card-rate text-center">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                            <div class="card-rate text-center row mb-2">
+                                <div class="col text-start">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <div class="col text-end">
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                </div>
                             </div>
                             <div class="card-text">
                                 <p class="address">
-                                    <strong>Endereço:</strong> Rua Vittorio Fasano, 88
-                                    São Paulo, São Paulo
-                                </p>
+                                    <strong>Endereço:</strong> R. Vitório Fasano, 88 - Cerqueira César, São Paulo - SP, 01414-020
                                 <p class="phone">
-                                    <strong>Telefone:</strong> (11) 3896 4000
+                                    <strong>Telefone:</strong> (11) 3896-4000
                                 </p>
                                 <div class="d-grid mx-auto reserva">
                                     <a href="https://www.fasano.com.br/hoteis/fasano-sao-paulo#reservation"
@@ -277,17 +298,24 @@
                 <div class="col d-flex">
                     <div class="card list">
                         <a href="../pages/hoteis/comfort-ibirapuera.html">
-                            <img src="../images/hoteis/comfort_ibirapuera.jpg" class="card-img-top"
+                            <img src="../images/gastronomia/estadao_bar_lanches.jpg" class="card-img-top"
                                 alt="Comfort Ibirapuera">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title text-center">Estadão Bar e Lanches</h5>
-                            <div class="card-rate text-center">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                            <div class="card-rate text-center row mb-2">
+                                <div class="col text-start">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <div class="col text-end">
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar text-success"></i>
+                                    <i class="bi bi-currency-dollar"></i>
+                                </div>
                             </div>
                             <div class="card-text">
                                 <p class="address">

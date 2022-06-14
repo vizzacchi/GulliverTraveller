@@ -112,7 +112,6 @@ section.section-home .form-busca-destino {
 article table tbody tr td {
 	color: var(--font-color)	
 }
-
 article.article-index {
 	height: 100vh;
 	margin-top: 0;
@@ -201,6 +200,11 @@ article.article-home {
 /*********** Modal **********/
 .modal .modal-body {
 	background-color: var(--body-background)
+}
+.modal .modal-body textarea {
+    height: 140px;
+    margin-bottom: 1rem;
+    resize: none
 }
 .modal .modal-body > .border {
 	background-color: var(--body-background)

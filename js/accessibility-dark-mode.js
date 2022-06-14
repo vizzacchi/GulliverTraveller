@@ -14,12 +14,16 @@ function diminui(){
     // alterando uma propriedade
     el.style.fontSize = '15px';
 }
-
 function dislexia(){
-    alert("cheguei");
-    let el = document.querySelector('html');
+    let el = document.querySelector('body');
     // alterando uma propriedade
-    el.style.fontFamily  = 'Douglas';
+    el.style.fontFamily  = 'opendyslexicaltaregular';
     el.style.fontSize    = '15px';
-    alert("passei, mas não alterei");
 }
+function roboto(){
+    let el = document.querySelector('body');
+    // alterando uma propriedade
+    el.style.fontFamily  = 'roboto';
+    el.style.fontSize    = '15px';
+}
+

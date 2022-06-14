@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
-@font-face{
-    font-family: Douglas;
-    src: url("../fonts/OpenDyslexicAlta-Regular.otf");
+@font-face {
+    font-family: opendyslexicaltaregular;
+    src: url(../fonts/opendyslexicalta-regular-webfont.eot);
+    src: url(../fonts/opendyslexicalta-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opendyslexicalta-regular-webfont.woff2) format('woff2'),
+         url(../fonts/opendyslexicalta-regular-webfont.woff) format('woff'),
+         url(../fonts/opendyslexicalta-regular-webfont.ttf) format('truetype'),
+         url(../fonts/opendyslexicalta-regular-webfont.svg#opendyslexicaltaregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /******** Dark Mode ********/
@@ -23,7 +30,7 @@
 }
 /****************************/
 body {
-    /*font-family: 'Roboto', sans-serif !important;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 15px !important;
     background-color: var(--body-background)
 }
@@ -163,9 +170,9 @@ article.article-home {
     background-color:#81b29a;
     border-color: #81b29a;
 }
-.btn-primary:hover{
-    background-color:#F2CC8F;
-    border-color: #F2CC8F;
+.btn-primary:hover,:focus{
+    background-color:#e07a5f;
+    border-color: #e07a5f;
 }
 .reserva {
 	width: 100%;

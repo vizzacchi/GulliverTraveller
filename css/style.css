@@ -159,6 +159,14 @@ article.article-home {
     color: var(--font-color-link);
     font-weight: 700
 }
+.btn-primary{
+    background-color:#81b29a;
+    border-color: #81b29a;
+}
+.btn-primary:hover{
+    background-color:#F2CC8F;
+    border-color: #F2CC8F;
+}
 .reserva {
 	width: 100%;
     padding: 0 1rem 1rem 1rem

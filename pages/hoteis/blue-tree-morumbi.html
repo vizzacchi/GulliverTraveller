@@ -129,12 +129,8 @@
 		
 		<!------- Conteúdo ------->
 		<main class="main-page container">
-			<section>
+			<section class="mb-4">
 				<h1 class="text-center">Blue Tree Premium Morumbi</h1>
-				<div class="text-center mb-5">
-					<a href="https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi/" target="_black">https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi</a>
-					<i class="bi bi-telephone-fill mx-2"></i>(11) 5187-1200
-				</div>
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -144,7 +140,6 @@
 					</ol>
 				</nav>
 			</section>
-
 			<article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 				<div class="col">
 				
@@ -162,41 +157,131 @@
 						comodidades incluem piscina externa na cobertura, spa, sauna, sala de ginástica e piscina coberta.
 					</p>
 
-					<!-- Comentários e Notas -->
-					<h4>4.852 avaliações nota 4/5estrelas</h4>
-					<div class="card-rate">
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-half text-warning"></i>
+					<!------ Avaliações ------>
+					<div class="row mb-4">
+						<div class="col-md-6">
+							<h6>4.852 avaliações nota 4,4 estrelas</h6>
+							<div class="card-rate">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-half text-warning"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+							</div>
+						</div>
 					</div>
-					<p class="text-left border p-3">
-						Este hotel é excelente! A experiência que tive foi incrível!
-						Os funcionários bug super, super mesmo, educados e atenciosos.
-						Os quartos tem Wi-Fi, tem frigobar, ar condicionado, e a vista é linda, do outro lado do hotel tem o
-						shopping Morumbi, e em época de natal à árvore de natal que fica do lado de fora do shopping é linda
-						e é total vista pelas janelas do quarto.
-						As janelas do quarto são trancadas, pois é inteiramente de vidro, e tem uma bancada, que as pessoas
-						podem cair se estiver aberta, então por precaução e super justo, estão fechadas.
-					</p>
-					<p class="text-left border p-3">
-						A recepção do hotel estava com fila, tanto no check in, quanto no check out,
-						mas fora isso, amei ficar lá! O quarto era super confortável, com janelas com cancelamento de ruído,
-						cortina com blackout, o chuveiro tinha regulação de temperatura quente e fria, tinha secador no
-						banheiro, ar condicionado, sofazinho... tudo o que a gente quer pra descansar/relaxar tinha no
-						quarto. Além disso, o café da manhã é completíssimooooo, com opções para absolutamente todos os
-						tipos de pessoas. Pra mim, o café da manhã do hotel faz parte da magia de viajar e o Blue Tree não
-						decepcionou nesse quesito - muito pelo contrário!
-					</p>
-					<p class="text-left border p-3">
-						Pontos positivos: Funcionários suuuper atenciosos e queridos, vista
-						incrível, café da manhã impecavel, boa higienização, wifi veloz, quarto confortável, área de piscina
-						agradavel e limpa.
-						Pontos negativos: frigobar não estava funcionando adequadamente e check in demorado.
-					</p>
+
+					<!--- Modal Avaliações --->
+					<div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="collapse" id="collapseExample">
+										<div class="form-floating">
+											<textarea class="form-control" id="floatingTextarea2"></textarea>
+											<label for="floatingTextarea2">Deixe seu comentário...</label>
+										</div>
+									</div>
+
+									<!----- Comentários ----->
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Italo Santos</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-half text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Este hotel é excelente! A experiência que tive foi incrível!
+											Os funcionários bug super, super mesmo, educados e atenciosos.
+											Os quartos tem Wi-Fi, tem frigobar, ar condicionado, e a vista é linda, do outro lado do hotel tem o
+											shopping Morumbi, e em época de natal à árvore de natal que fica do lado de fora do shopping é linda
+											e é total vista pelas janelas do quarto.
+											As janelas do quarto são trancadas, pois é inteiramente de vidro, e tem uma bancada, que as pessoas
+											podem cair se estiver aberta, então por precaução e super justo, estão fechadas.
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Guilerme Ribas</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											A recepção do hotel estava com fila, tanto no check in, quanto no check out,
+											mas fora isso, amei ficar lá! O quarto era super confortável, com janelas com cancelamento de ruído,
+											cortina com blackout, o chuveiro tinha regulação de temperatura quente e fria, tinha secador no
+											banheiro, ar condicionado, sofazinho... tudo o que a gente quer pra descansar/relaxar tinha no
+											quarto. Além disso, o café da manhã é completíssimooooo, com opções para absolutamente todos os
+											tipos de pessoas. Pra mim, o café da manhã do hotel faz parte da magia de viajar e o Blue Tree não
+											decepcionou nesse quesito - muito pelo contrário!
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Douglas Jorge</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Pontos positivos: Funcionários suuuper atenciosos e queridos, vista
+											incrível, café da manhã impecavel, boa higienização, wifi veloz, quarto confortável, área de piscina
+											agradavel e limpa.
+											Pontos negativos: frigobar não estava funcionando adequadamente e check in demorado.
+										</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!------ Informações ------>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+								<td class="text-end">(11) 5187-1200</td>
+							</tr>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+								<td class="text-end"><a href="https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi" target="_black">https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				
 				<div class="col">
 				
 					<!--------- Fotos --------->
@@ -204,23 +289,17 @@
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue_tree_morumbi/quarto de casal.webp" class="card-img-top" alt="blue tree premium morumbi quarto de casal">
-								</a>
+								<img src="../../images/hoteis/blue_tree_morumbi/quarto de casal.webp" class="card-img-top" alt="blue tree premium morumbi quarto de casal">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue_tree_morumbi/area de lazer.webp" class="card-img-top" alt="blue tree premium morumbi area de lazer">
-								</a>
+								<img src="../../images/hoteis/blue_tree_morumbi/area de lazer.webp" class="card-img-top" alt="blue tree premium morumbi area de lazer">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue_tree_morumbi/quartosolteiro.jpeg" class="card-img-top" alt="Blue tree premium morumbi quarto de solteiro">
-								</a>
+								<img src="../../images/hoteis/blue_tree_morumbi/quartosolteiro.jpeg" class="card-img-top" alt="Blue tree premium morumbi quarto de solteiro">
 							</div>
 						</div>
 					</div>

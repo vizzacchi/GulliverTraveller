@@ -129,12 +129,8 @@
 		
 		<!------- Conteúdo ------->
 		<main class="main-page container">
-			<section>
+			<section class="mb-4">
 				<h1 class="text-center">Comfort Ibirapuera</h1>
-				<div class="text-center mb-5">
-					<a href="http://comfort-ibirapuera.sao-paulo-hotels.net/pt/" target="_black">http://comfort-ibirapuera.sao-paulo-hotels.net/pt/</a>
-					<i class="bi bi-telephone-fill mx-2"></i>(11) 5056-5800
-				</div>
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -144,47 +140,138 @@
 					</ol>
 				</nav>
 			</section>
-
 			<article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 				<div class="col">
 				
 					<!------- Descrição ------->
-					<p class="text-left border p-3">Localizado em Moema, uma das melhores regiões de São Paulo, em frente a Moema do
-						Metro e
-						estamos próximo a ótimos bares e restaurantes, a 1km do Shopping Ibirapuera e Parque do Ibirapuera, 
-						e a 3,5km do aeroporto de Congonhas. O hotel conta com recepção 24 horas e serviço de quarto, para
-							tornar a sua estadia ainda mais agradável. A propriedade ainda conta com piscina e café da manhã. 
-							Os hóspedes que chegam de veículos têm acesso ao estacionamento público pago perto Oferecemos também 
-							facilidades como fitness center, piscina com solarium e deslumbrante vista de São Paulo, room-service 
-							até às 23 horas, restaurante, recepção 24 horas e sala para eventos até 35 pessoas.
+					<p class="text-left border p-3">
+						Localizado em Moema, uma das melhores regiões de São Paulo, em frente a Moema do
+						Metro e estamos próximo a ótimos bares e restaurantes,
+						a 1km do Shopping Ibirapuera e Parque do Ibirapuera, e a 3,5km do aeroporto de Congonhas.
+						O hotel conta com recepção 24 horas e serviço de quarto,
+						para tornar a sua estadia ainda mais agradável. 
+						A propriedade ainda conta com piscina e café da manhã. 
+						Os hóspedes que chegam de veículos têm acesso ao estacionamento público pago perto Oferecemos também 
+						facilidades como fitness center, piscina com solarium e deslumbrante vista de São Paulo,
+						room-service até às 23 horas, restaurante, recepção 24 horas e sala para eventos até 35 pessoas.
 					</p>
 
-					<!-- Comentários e Notas -->
-					<h4>4.254 avaliações nota 4/5estrelas</h4>
-					<div class="card-rate">
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-half text-warning"></i>
+					<!------ Avaliações ------>
+					<div class="row mb-4">
+						<div class="col-md-6">
+							<h6>1.306 avaliações nota 4,5 estrelas</h6>
+							<div class="card-rate">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-half text-warning"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+							</div>
+						</div>
 					</div>
-					<p class="text-left border p-3" >
-                        
-                        Ótima localização e está próximo a bares e restaurantes , o café da manhã é bem completo e o 
-                        ambiente super aconchegante, a equipe é bem atenciosa, cordial e ágil. O quarto é bem espaçoso 
-                        e tinha tudo o que precisamos como secador, cofre, frigobar, amenities etc , a piscina é limpa 
-                        e a vista da piscina e da sacada do quarto são Lindasl !</p>
-					</p>
-					<p class="text-left border p-3" >
-						Hotel muito bom, muito limpo, os funcionários são muito educados e solícitos, 
-                    café da manhã bom, bem localizado que fica no coração de Moema em frente à estação do metrô, tem aquecedor 
-                    que me salvou do frio.
-					</p>
-					<p class="text-left border p-3" >
-						A localização mto boa de frente da estação moema e a 20 min do parque Ibirapuera o 
-                    quarto eh amplo e mto limpo atendimento excepcional precisei de uma cama extra no meu quarto e foram super 
-                    atenciosos comigo gerente do hotel um amr de pessoa café da manhã mto bom com certeza voltarei em breve!
-					</p>
+
+					<!--- Modal Avaliações --->
+					<div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="collapse" id="collapseExample">
+										<div class="form-floating">
+											<textarea class="form-control" id="floatingTextarea2"></textarea>
+											<label for="floatingTextarea2">Deixe seu comentário...</label>
+										</div>
+									</div>
+
+									<!----- Comentários ----->
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Italo Santos</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-half text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Ótima localização e está próximo a bares e restaurantes , o café da manhã é bem completo e o 
+											ambiente super aconchegante, a equipe é bem atenciosa, cordial e ágil. O quarto é bem espaçoso 
+											e tinha tudo o que precisamos como secador, cofre, frigobar, amenities etc , a piscina é limpa 
+											e a vista da piscina e da sacada do quarto são Lindasl!
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Guilerme Ribas</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Hotel muito bom, muito limpo, os funcionários são muito educados e solícitos, 
+											café da manhã bom, bem localizado que fica no coração de Moema em frente à estação do metrô, tem aquecedor 
+											que me salvou do frio.
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Douglas Jorge</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											A localização mto boa de frente da estação moema e a 20 min do parque Ibirapuera o 
+											quarto eh amplo e mto limpo atendimento excepcional precisei de uma cama extra no meu quarto e foram super 
+											atenciosos comigo gerente do hotel um amr de pessoa café da manhã mto bom com certeza voltarei em breve!
+										</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!------ Informações ------>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+								<td class="text-end">(11) 5056-5800</td>
+							</tr>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+								<td class="text-end"><a href="http://comfort-ibirapuera.sao-paulo-hotels.net/pt/" target="_black">http://comfort-ibirapuera.sao-paulo-hotels.net/pt/</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				
 				<div class="col">
@@ -194,23 +281,17 @@
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/comfort-ibirapuera/arealazer.jpg" class="card-img-top" alt="blue tree premium morumbi quarto de casal">
-								</a>
+								<img src="../../images/hoteis/comfort-ibirapuera/arealazer.jpg" class="card-img-top" alt="blue tree premium morumbi quarto de casal">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/comfort-ibirapuera/quarto.jpg" class="card-img-top" alt="blue tree premium morumbi area de lazer">
-								</a>
+								<img src="../../images/hoteis/comfort-ibirapuera/quarto.jpg" class="card-img-top" alt="blue tree premium morumbi area de lazer">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/comfort-ibirapuera/restaurante.jpg" class="card-img-top" alt="Blue tree premium morumbi quarto de solteiro">
-								</a>
+								<img src="../../images/hoteis/comfort-ibirapuera/restaurante.jpg" class="card-img-top" alt="Blue tree premium morumbi quarto de solteiro">
 							</div>
 						</div>
 					</div>

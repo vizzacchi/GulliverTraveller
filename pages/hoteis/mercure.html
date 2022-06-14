@@ -145,11 +145,6 @@
         <main class="main-page container">
             <section>
                 <h1 class="text-center">Mercure Sao Paulo Pamplona Hotel</h1>
-                <div class="text-center mb-5">
-                    <a href="https://mercure.accor.com/mercure/pamplona"
-                        target="_black">https://mercure.accor.com/mercure/pamplona</a>
-                    <i class="bi bi-telephone-fill mx-2"></i>(11)2878-5500
-                </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -159,7 +154,6 @@
                     </ol>
                 </nav>
             </section>
-
             <article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
                 <div class="col">
 
@@ -183,33 +177,123 @@
                         no Mercure São Paulo Pamplona e aproveite.
                     </p>
 
-                    <!-- comentario e notas -->
-                    <h4>826 avaliações nota 4/5estrelas</h4>
-                    <div class="card-rate">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star text-warning"></i>
+                    <!------ Avaliações ------>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h6>832 avaliações nota 4,3 estrelas</h6>
+                            <div class="card-rate">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-left border p-3">
-                        Um hotel incrível, perto dos melhores lugares de São Paulo. Deixa o fim de
-                        semana confortável e animado nessa cidade incrível.
-                        Petfriendly, onde somos recebidos com Caminha e pontinhos. E para os pais de pet piscina e café da
-                        manhã para começar o dia preparado para descobrir todos os points de São Paulo !
-                    </p>
-                    <p class="text-left border p-3">
-                        Localização excelente, check in eficiente e objetivo. O Restaurante do hotel
-                        é muito bom, tanto o café da manhã quanto almoço buffet; cardápio variado bem feito e atendimento
-                        cortês. O apartamento é amplo e funcional e a decoração uma graça! Roupas de cama e banho bem
-                        cuidadas. No apartamento tem uma chaleira elétrica com opções de café e chás
-                    </p>
-                    <p class="text-left border p-3">
-                        Lugar aconchegante. Café da manhã muito bom. Muito confortável os
-                        apartamentos. Um bom chuveiro quente.
-                    </p>
-                </div>
 
+                    <!--- Modal Avaliações --->
+                    <div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="floatingTextarea2"></textarea>
+                                            <label for="floatingTextarea2">Deixe seu comentário...</label>
+                                        </div>
+                                    </div>
+
+                                    <!----- Comentários ----->
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Italo Santos</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-half text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Um hotel incrível, perto dos melhores lugares de São Paulo. Deixa o fim de
+                                            semana confortável e animado nessa cidade incrível.
+                                            Petfriendly, onde somos recebidos com Caminha e pontinhos. E para os pais de pet piscina e café da
+                                            manhã para começar o dia preparado para descobrir todos os points de São Paulo!
+                                        </p>
+                                    </div>
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Guilerme Ribas</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Localização excelente, check in eficiente e objetivo. O Restaurante do hotel
+                                            é muito bom, tanto o café da manhã quanto almoço buffet; cardápio variado bem feito e atendimento
+                                            cortês. O apartamento é amplo e funcional e a decoração uma graça! Roupas de cama e banho bem
+                                            cuidadas. No apartamento tem uma chaleira elétrica com opções de café e chás
+                                        </p>
+                                    </div>
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Douglas Jorge</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Lugar aconchegante. Café da manhã muito bom. Muito confortável os
+                                            apartamentos. Um bom chuveiro quente.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ Informações ------>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+                                <td class="text-end">(11) 2878-5500</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+                                <td class="text-end"><a href="https://mercure.accor.com/mercure/pamplona" target="_black">https://mercure.accor.com/mercure/pamplona</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="col">
 
                     <!--------- Fotos --------->
@@ -217,26 +301,17 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/mercure_pamplona/mercure-quarto casal.jpg"
-                                        class="card-img-top" alt="mercure quarto de casal">
-                                </a>
+                                <img src="../../images/hoteis/mercure_pamplona/mercure-quarto casal.jpg" class="card-img-top" alt="mercure quarto de casal">
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/mercure_pamplona/mercure-lazer.jpeg" class="card-img-top"
-                                        alt="mercure are de lazer">
-                                </a>
+                                <img src="../../images/hoteis/mercure_pamplona/mercure-lazer.jpeg" class="card-img-top" alt="mercure are de lazer">
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/mercure_pamplona/mercure-quarto solteiro.jpg"
-                                        class="card-img-top" alt="mercure quarto de solteiro">
-                                </a>
+                                <img src="../../images/hoteis/mercure_pamplona/mercure-quarto solteiro.jpg" class="card-img-top" alt="mercure quarto de solteiro">
                             </div>
                         </div>
                     </div>
@@ -244,9 +319,7 @@
                     <!------ Como Chegar ------>
                     <h4>Como Chegar:</h4>
                     <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.997795235657!2d-46.66033128486474!3d-23.568522667742222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c454ef9fcd%3A0xb8a3a403a40e5c4!2sMercure%20S%C3%A3o%20Paulo%20Pamplona%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1653526867873!5m2!1spt-BR!2sbr"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.997795235657!2d-46.66033128486474!3d-23.568522667742222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c454ef9fcd%3A0xb8a3a403a40e5c4!2sMercure%20S%C3%A3o%20Paulo%20Pamplona%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1653526867873!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </article>
@@ -255,27 +328,23 @@
         <!----- Footer ----->
         <footer>
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                    <div class="col">
+				<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+					<div class="col">
                         <ul class="list-unstyled d-flex text-end">
-                            <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24"
-                                        height="24"></i></a></li>
-                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24"
-                                        height="24"></i></a></li>
-                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" width="24"
-                                        height="24"></i></a></li>
+                            <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24" height="24"></i></a></li>
+                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
+                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" width="24" height="24"></i></a></li>
                         </ul>
                         <p>Gulliver Traveller | FIAP &copy;2022 - Todos os direitos reservados.</p>
                     </div>
                     <div class="col">
-                        <form method="" action="">
+                        <form>
                             <h5>Assine a nossa newsletter</h5>
                             <p>Monthly digest of whats new and exciting from us.</p>
                             <div class="d-flex w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">Email address</label>
-                                <input type="email" class="form-control" id="newsletter1"
-                                    placeholder="Digite seu e-mail...">
-                                <input type="submit" class="btn btn-primary" value="Inscrever">
+                                <input id="newsletter1" type="text" class="form-control" placeholder="E-mail...">
+                                <button class="btn btn-primary" type="button">Inscrever</button>
                             </div>
                         </form>
                     </div>

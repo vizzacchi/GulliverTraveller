@@ -128,12 +128,8 @@
 		
 		<!------- Conteúdo ------->
 		<main class="main-page container">
-			<section>
+			<section class="mb-4">
 				<h1 class="text-center">Blue Tree Premium Paulista</h1>
-				<div class="text-center mb-5">
-					<a href="https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/" target="_black">https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/</a>
-					<i class="bi bi-telephone-fill mx-2"></i>(11)3147-7000
-				</div>
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -143,7 +139,6 @@
 					</ol>
 				</nav>
 			</section>
-
 			<article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 				<div class="col">
 				
@@ -160,37 +155,127 @@
 						incluem piscina coberta, academia e spa com sauna.
 					</p>
 
-					<!-- Comentários e Notas -->
-					<h4>3.305 avaliações nota 4,5/5 estrelas</h4>
-					<div class="card-rate">
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-half text-warning"></i>
+					<!------ Avaliações ------>
+					<div class="row mb-4">
+						<div class="col-md-6">
+							<h6>3.305 avaliações nota 4,5 estrelas</h6>
+							<div class="card-rate">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-half text-warning"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+							</div>
+						</div>
 					</div>
-					<p class="text-left border p-3">
-						Foi a primeira vez que me hospedei neste hotel, gostei muito da experiência,
-						passei três noites no local, todos os funcionários foram muitos educados e prestativos, a estrutura
-						é muito boa, conta com academia, psina, spa, recepção muito confortável, bar, garagem, serviço de
-						valet, sem contar com o café da manhã que é muito completo, o melhor de tudo é a localização, fica
-						muito próximo da avenida Paulista, perto do metrô, quando eu voltar a São Paulo hospedarei novamente
-						com vocês!!!
-					</p>
-					<p class="text-left border p-3">
-						Excelente hotel! Check in rápido, pessoal da recepção excelente. Quarto
-						muito confortável, espaçoso. Café da manhã espetacular, garçons educados e atenciosos. Uma crítica
-						construtiva: estive hospedada para um fim de semana onde tinha um curso, e tive muita dificuldade eu
-						conseguir fazer uso do ferro de passar. Me gerou um pouco de transtorno, mas nada que atrapalhasse
-						tanto. A meu ver o hotel deveria ter mais ferros de passar disponíveis, mas somente isso!
-					</p>
-					<p class="text-left border p-3">
-						Ótimo e amplo apartamento com excelente localização e especial atendimento
-						de todos funcionários. Estacionamento anexo com manobristas e bom café da manhã e restaurante.
-						👏👏👏 Super indico
-					</p>
+
+					<!--- Modal Avaliações --->
+					<div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="collapse" id="collapseExample">
+										<div class="form-floating">
+											<textarea class="form-control" id="floatingTextarea2"></textarea>
+											<label for="floatingTextarea2">Deixe seu comentário...</label>
+										</div>
+									</div>
+
+									<!----- Comentários ----->
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Italo Santos</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-half text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Foi a primeira vez que me hospedei neste hotel, gostei muito da experiência,
+											passei três noites no local, todos os funcionários foram muitos educados e prestativos, a estrutura
+											é muito boa, conta com academia, psina, spa, recepção muito confortável, bar, garagem, serviço de
+											valet, sem contar com o café da manhã que é muito completo, o melhor de tudo é a localização, fica
+											muito próximo da avenida Paulista, perto do metrô, quando eu voltar a São Paulo hospedarei novamente
+											com vocês!!!
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Guilerme Ribas</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Excelente hotel! Check in rápido, pessoal da recepção excelente. Quarto
+											muito confortável, espaçoso. Café da manhã espetacular, garçons educados e atenciosos. Uma crítica
+											construtiva: estive hospedada para um fim de semana onde tinha um curso, e tive muita dificuldade eu
+											conseguir fazer uso do ferro de passar. Me gerou um pouco de transtorno, mas nada que atrapalhasse
+											tanto. A meu ver o hotel deveria ter mais ferros de passar disponíveis, mas somente isso!
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Douglas Jorge</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Ótimo e amplo apartamento com excelente localização e especial atendimento
+											de todos funcionários. Estacionamento anexo com manobristas e bom café da manhã e restaurante.
+											👏👏👏 Super indico
+										</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!------ Informações ------>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+								<td class="text-end">(11) 3147-7000</td>
+							</tr>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+								<td class="text-end"><a href="https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/" target="_black">https://www.bluetree.com.br/hotel/blue-tree-premium-paulista</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				
 				<div class="col">
 				
 					<!--------- Fotos --------->
@@ -198,23 +283,17 @@
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-quarto-luxo.jpg" class="card-img-top" alt="Blue Tree Premium Paulista quarto luxo">
-								</a>
+								<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-quarto-luxo.jpg" class="card-img-top" alt="Blue Tree Premium Paulista quarto luxo">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-piscina.jpg" class="card-img-top" alt="Blue Tree Premium Paulista piscina">
-								</a>
+								<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-piscina.jpg" class="card-img-top" alt="Blue Tree Premium Paulista piscina">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-restaurante.jpg" class="card-img-top" alt="Blue Tree Premium Paulista resturante">
-								</a>
+								<img src="../../images/hoteis/blue-tree-paulista/blue-tree-paulista-restaurante.jpg" class="card-img-top" alt="Blue Tree Premium Paulista resturante">
 							</div>
 						</div>
 					</div>

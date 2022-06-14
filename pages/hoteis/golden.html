@@ -127,12 +127,8 @@
 
         <!------- Conteúdo ------->
         <main class="main-page container">
-            <section>
+            <section class="mb-4">
                 <h1 class="text-center">Golden Tulip Paulista Plaza</h1>
-                <div class="text-center mb-5">
-                    <a href="https://www.radissonhotelsamericas.com/en-us/hotels/radisson-sao-paulo-paulista" target="_black">https://www.radissonhotelsamericas.com/en-us/hotels/radisson-sao-paulo-paulista</a>
-                    <i class="bi bi-telephone-fill mx-2"></i>(11) 2627-1000
-                </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -141,8 +137,7 @@
                         <li class="breadcrumb-item active" aria-current="page">Golden Tulip Paulista Plaza</li>
                     </ol>
                 </nav>
-            </section>
-        
+            </section>        
             <article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
                 <div class="col">
                 
@@ -159,33 +154,123 @@
                         externas. Também estão disponíveis um centro comercial e nove salas de eventos.
                     </p>
 
-                    <!-- comentario e notas -->
-                    <h2>3.896 avaliações nota 4/5estrelas</h2>
-                    <div class="card-rate">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-half text-warning"></i>
+                    <!------ Avaliações ------>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h6>3.896 avaliações nota 4,4 estrelas</h6>
+                            <div class="card-rate">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-left border p-3">
-                        Hotel da rede Radisson, com padrão 4 estrelas, está localizado a um
-                        quarteirão da Avenida Paulista, em São Paulo. Tal localização é excelente, próximo de uma imensa
-                        variedade de serviços, opções de lazer e de cultura.
-                        Os quartos possuem tamanho razoável, é confortável e o acesso Wi-Fi é de boa velocidade.
-                        O café da manhã é bem servido e tem variedade de opções.
-                        Por fim, o atendimento dos funcionários é gentil e educado.
-                    </p>
-                    <p class="text-left border p-3">
-                        Hotel bem localizado, próximo à restaurantes e do metrô. Café da manhã muito
-                        bom, com bastante variedade. Quartos confortáveis e atendimento bem prestado.
-                    </p>
-                    <p class="text-left border p-3">
-                        Atendimento perfeito, ajudam o hóspede o máximo que podem ! Aconselho os
-                        quartos executivos, que são melhores que o standard. Café da manhã farto e sem confusão.
-                    </p>
-                </div>
 
+                    <!--- Modal Avaliações --->
+                    <div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="floatingTextarea2"></textarea>
+                                            <label for="floatingTextarea2">Deixe seu comentário...</label>
+                                        </div>
+                                    </div>
+
+                                    <!----- Comentários ----->
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Italo Santos</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-half text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Hotel da rede Radisson, com padrão 4 estrelas, está localizado a um
+                                            quarteirão da Avenida Paulista, em São Paulo. Tal localização é excelente, próximo de uma imensa
+                                            variedade de serviços, opções de lazer e de cultura.
+                                            Os quartos possuem tamanho razoável, é confortável e o acesso Wi-Fi é de boa velocidade.
+                                            O café da manhã é bem servido e tem variedade de opções.
+                                            Por fim, o atendimento dos funcionários é gentil e educado.
+                                        </p>
+                                    </div>
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Guilerme Ribas</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Hotel bem localizado, próximo à restaurantes e do metrô. Café da manhã muito
+                                            bom, com bastante variedade. Quartos confortáveis e atendimento bem prestado.
+                                        </p>
+                                    </div>
+                                    <div class="border p-3 mb-3">
+                                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                            <div class="col">
+                                                <h5>Douglas Jorge</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Atendimento perfeito, ajudam o hóspede o máximo que podem ! Aconselho os
+                                            quartos executivos, que são melhores que o standard. Café da manhã farto e sem confusão.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------ Informações ------>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+                                <td class="text-end">(11) 2627-1000</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+                                <td class="text-end"><a href="https://www.radissonhotelsamericas.com/en-us/hotels/radisson-sao-paulo-paulista" target="_black">https://www.radissonhotelsamericas.com/en-us/hotels/radisson-sao-paulo-paulista</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 				<div class="col">
 				
 					<!--------- Fotos --------->
@@ -193,23 +278,17 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/golden_tulip_paulista/quarto casal.jpeg" class="card-img-top" alt="golden quarto de casal">
-                                </a>
+                                <img src="../../images/hoteis/golden_tulip_paulista/quarto casal.jpeg" class="card-img-top" alt="golden quarto de casal">
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/golden_tulip_paulista/area de lazer.jpg" class="card-img-top" alt="golden area de lazer">
-                                </a>
+                                <img src="../../images/hoteis/golden_tulip_paulista/area de lazer.jpg" class="card-img-top" alt="golden area de lazer">
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="">
-                                    <img src="../../images/hoteis/golden_tulip_paulista/quarto solteiro.jpg" class="card-img-top" alt="golden quarto de solteiro">
-                                </a>
+                                <img src="../../images/hoteis/golden_tulip_paulista/quarto solteiro.jpg" class="card-img-top" alt="golden quarto de solteiro">
                             </div>
                         </div>
                     </div>

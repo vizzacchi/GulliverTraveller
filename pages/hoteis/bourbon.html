@@ -141,12 +141,8 @@
 		
 		<!------- Conteúdo ------->
 		<main class="main-page container">
-			<section>
+			<section class="mb-4">
 				<h1 class="text-center">Bourbon Convention Ibirapuera</h1>
-				<div class="text-center mb-5">
-					<a href="https://www.bourbon.com.br/hotel/bourbon-convention-ibirapuera-hotel" target="_black">https://www.bourbon.com.br/hotel/bourbon-convention-ibirapuera-hotel</a>
-					<i class="bi bi-telephone-fill mx-2"></i>(11)2161-2200
-				</div>
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -156,7 +152,6 @@
 					</ol>
 				</nav>
 			</section>
-		
 			<article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 				<div class="col">
 				
@@ -179,55 +174,139 @@
 						o hotel possui também diversos formatos de montagem para atender diferentes capacidades
 					</p>
 
-					<!-- Comentários e Notas -->
-					<h4>9.039 avaliações nota 4/5estrelas</h4>
-					<div class="card-rate">
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-fill text-warning"></i>
-						<i class="bi bi-star-half text-warning"></i>
+					<!------ Avaliações ------>
+					<div class="row mb-4">
+						<div class="col-md-6">
+							<h6>9.039 avaliações nota 4,5 estrelas</h6>
+							<div class="card-rate">
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-fill text-warning"></i>
+								<i class="bi bi-star-half text-warning"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-comentarios">Comentários</button>
+							</div>
+						</div>
 					</div>
-					<p class="text-left border p-3">
-						Pontos excelentes: Limpeza, decoração do quarto, localização, comida e
-						atendimento.
-						(Gostamos também muito
-						do chuveiro).
-						Pontos a melhorar: Tivemos dificuldade para dormir devido os travesseiros estarem extremamente
-						murchos.
-						Barulho de água e gente andando no piso superior. (Não sei dizer se é algo específico do andar,
-						mas ficamos
-						no 13°). Poderia também ter opção de mesas externas para o café da manhã.
-						No geral, achei o hotel bom e indicaria.
-					</p>
-					<p class="text-left border p-3">
-						Ótima localização, shopping ao lado, e bons restaurantes.
-						Café da manhã mediano, porém de qualidade.
-						Quarto com acomodações precisando de reforma, janela tinha vazamento de água, tinha chovido na
-						parte da
-						tarde. Banheiro com aspecto antigo, bacia sanitária precisando de troca.
-						Colchões bons, porém velhos. Roupas de cama boas, lençol do colchão não tem elástico, fica se
-						soltando do
-						colchão durante a noite. Travesseiros disponibilizados muito baixos, tivemos que pedir extras na
-						recepção.
-					</p>
-					<p class="text-left border p-3">
-						Gostei muito. Confesso que tinha ficado com receio após reservar porque
-						vi muitas
-						avaliações negativas. Porém a experiência foi ótima.
-						Hotel bem estruturado, com muitos elevadores, quarto amplo, Wi-Fi funciona bem e o ar
-						condicionado é
-						excelente. O chuveiro também é muito bom e pra quem curte aviões é o máximo vê-los passando por
-						perto a todo
-						momento (da pra tirar muitas fotos, inclusive).
-						O café da manhã é excelente, bem diversificado e gostoso. Outro ponto positivo é a academia e a
-						piscina, que
-						são bem agradáveis e novos.
-						Também fui bem atendida a todo momento por todos os funcionários.
-						Vale conhecer o Zillis, lounge bar/restaurante do Hotel. Ambiente agradável e comida boa!
-					</p>
+
+					<!--- Modal Avaliações --->
+					<div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<div class="collapse" id="collapseExample">
+										<div class="form-floating">
+											<textarea class="form-control" id="floatingTextarea2"></textarea>
+											<label for="floatingTextarea2">Deixe seu comentário...</label>
+										</div>
+									</div>
+
+									<!----- Comentários ----->
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Italo Santos</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-half text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Pontos excelentes: Limpeza, decoração do quarto, localização, comida e atendimento.
+											(Gostamos também muito do chuveiro).
+											Pontos a melhorar: Tivemos dificuldade para dormir devido os travesseiros estarem extremamente murchos.
+											Barulho de água e gente andando no piso superior. (Não sei dizer se é algo específico do andar, mas ficamos
+											no 13°). Poderia também ter opção de mesas externas para o café da manhã.
+											No geral, achei o hotel bom e indicaria.
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Guilerme Ribas</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Ótima localização, shopping ao lado, e bons restaurantes.
+											Café da manhã mediano, porém de qualidade. Quarto com acomodações precisando de reforma,
+											janela tinha vazamento de água, tinha chovido na parte da
+											tarde. Banheiro com aspecto antigo, bacia sanitária precisando de troca.
+											Colchões bons, porém velhos. Roupas de cama boas, lençol do colchão não tem elástico,
+											fica se soltando do colchão durante a noite. Travesseiros disponibilizados muito baixos,
+											tivemos que pedir extras na recepção.
+										</p>
+									</div>
+									<div class="border p-3 mb-3">
+										<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+											<div class="col">
+												<h5>Douglas Jorge</h5>
+											</div>
+											<div class="col text-end">
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star-fill text-warning"></i>
+												<i class="bi bi-star text-warning"></i>
+											</div>
+										</div>
+										<p>
+											Gostei muito. Confesso que tinha ficado com receio após reservar porque
+											vi muitas
+											avaliações negativas. Porém a experiência foi ótima.
+											Hotel bem estruturado, com muitos elevadores, quarto amplo, Wi-Fi funciona bem e o ar
+											condicionado é
+											excelente. O chuveiro também é muito bom e pra quem curte aviões é o máximo vê-los passando por
+											perto a todo
+											momento (da pra tirar muitas fotos, inclusive).
+											O café da manhã é excelente, bem diversificado e gostoso. Outro ponto positivo é a academia e a
+											piscina, que
+											são bem agradáveis e novos.
+											Também fui bem atendida a todo momento por todos os funcionários.
+											Vale conhecer o Zillis, lounge bar/restaurante do Hotel. Ambiente agradável e comida boa!
+										</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample">Inserir Comentários</button>
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!------ Informações ------>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+								<td class="text-end">(11) 2161-2200</td>
+							</tr>
+							<tr>
+								<td class="fw-bold text-nowrap"><i class="bi bi-display mx-2"></i> Site</td>
+								<td class="text-end"><a href="https://www.bourbon.com.br/hotel/bourbon-convention-ibirapuera-hotel" target="_black">https://www.bourbon.com.br/hotel/bourbon-convention-ibirapuera-hotel</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				
 				<div class="col">
 				
 					<!--------- Fotos --------->
@@ -235,23 +314,17 @@
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/bourbon_convention/bourbon.jpg" class="card-img-top" alt="bourbon quarto de casal">
-								</a>
+								<img src="../../images/hoteis/bourbon_convention/bourbon.jpg" class="card-img-top" alt="bourbon quarto de casal">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/bourbon_convention/pscina.jpg.webp" class="card-img-top" alt="bourbon piscina">
-								</a>
+								<img src="../../images/hoteis/bourbon_convention/pscina.jpg.webp" class="card-img-top" alt="bourbon piscina">
 							</div>
 						</div>
 						<div class="col">
 							<div class="card">
-								<a href="">
-									<img src="../../images/hoteis/bourbon_convention/quarto2.jpg.webp" class="card-img-top" alt="Bourbon quarto de solteiro">
-								</a>
+								<img src="../../images/hoteis/bourbon_convention/quarto2.jpg.webp" class="card-img-top" alt="Bourbon quarto de solteiro">
 							</div>
 						</div>
 					</div>

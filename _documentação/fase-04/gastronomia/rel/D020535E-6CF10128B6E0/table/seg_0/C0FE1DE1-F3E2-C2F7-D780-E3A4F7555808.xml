@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0FE1DE1-F3E2-C2F7-D780-E3A4F7555808" name="fotos">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:25:35 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>Imagens dos pratos e do restauranrtes publicadas pelos usuários</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="8FEA94F9-6DE5-1EA3-F6F8-269490558F7A">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:26:53 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo" id="F2B95CB1-74B0-4064-AF8C-F8BA1842BBFA">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:26:53 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="AE390157-CB4A-5034-683E-DC18FAD6C002">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:26:53 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="foto" id="CB80531D-B4FA-F58B-6E83-87B93DB30CFA">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:26:53 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restaurante_codigo" id="C5545334-1B80-4389-9D8C-1CE1B5DF6F9B">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:27:04 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56FB979B-D1CA-93AC-8465-55BA58FC3998" referredColumn="5BF6E98B-6702-63FA-1F85-6928631C9DB7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4549660-F639-8A0F-E1DD-978E34910324" name="fotos_PK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:26:53 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FEA94F9-6DE5-1EA3-F6F8-269490558F7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AE9B1F7-BADE-46B8-9C76-966A0171956E" name="fotos_restaurante_FK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:27:04 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5545334-1B80-4389-9D8C-1CE1B5DF6F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

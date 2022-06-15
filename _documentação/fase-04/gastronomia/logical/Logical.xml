@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="7590D63A-CFD0-5365-B0FA-EF8A6A9A319F" mainViewID="FDF741D3-ECEC-E162-4235-6B3CFEEA05B4">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-14 23:55:18 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

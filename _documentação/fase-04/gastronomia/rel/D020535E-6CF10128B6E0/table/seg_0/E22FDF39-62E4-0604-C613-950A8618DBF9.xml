@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E22FDF39-62E4-0604-C613-950A8618DBF9" name="destino">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-14 23:55:49 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>destino</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="7DA1100A-8CED-C715-2FEC-5E903C79C27E">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-14 23:58:13 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destino" id="46498EFC-BB1F-DCCC-F8AE-5B34D8006FEA">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-14 23:58:13 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48774803-B880-7579-857E-B4D73898DC7A" name="destino_PK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-14 23:58:13 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DA1100A-8CED-C715-2FEC-5E903C79C27E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

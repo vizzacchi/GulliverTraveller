@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="05F36A7D-809D-846A-F99F-D2673ACBD514" containerWithKeyObject="3CA96E1A-D174-4E22-F608-E66541A50087" localFKIndex="07921E0F-641E-CC71-6B13-F61C8A2D5A45" name="faixa_preco_restaurante_FK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:23:01 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<referredTableLongName>restaurante</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>732545B1-2840-5310-A412-08077ACFA97C</referredTableID>
+<keyObject>D90D9CE3-A700-8B61-036A-4FF5AAF930A2</keyObject>
+<referredKeyID>D90D9CE3-A700-8B61-036A-4FF5AAF930A2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

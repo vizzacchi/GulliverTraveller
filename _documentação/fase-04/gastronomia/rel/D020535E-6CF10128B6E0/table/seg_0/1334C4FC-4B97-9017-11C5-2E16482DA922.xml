@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1334C4FC-4B97-9017-11C5-2E16482DA922" name="horarios">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:23:38 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>Horários de Funcionamento</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="F9B2C001-CE9E-9625-1CC9-F7BE06523A5E">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:24:58 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia" id="BE6CF89B-0F28-66A3-F0C7-3EB79E8F9E5F">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:24:58 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abre" id="7AAB3308-8DD2-13CE-49B5-8B1C4704F065">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:24:58 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="1BCB83CA-4319-F3E2-B80F-FB6B67C8F47F">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:24:58 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restaurante_codigo" id="A03A34F6-E5AE-DD94-4BE5-7AE250F9CC5F">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:25:06 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA084E86-705A-2CE1-4F77-8165589DB883" referredColumn="5BF6E98B-6702-63FA-1F85-6928631C9DB7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7703309A-5B25-D0EE-0368-AB127E5DAF5C" name="horarios_PK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:24:58 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9B2C001-CE9E-9625-1CC9-F7BE06523A5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE15ACA2-D7B9-6E08-ABEB-CAC65828C360" name="horarios_restaurante_FK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:25:06 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A03A34F6-E5AE-DD94-4BE5-7AE250F9CC5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

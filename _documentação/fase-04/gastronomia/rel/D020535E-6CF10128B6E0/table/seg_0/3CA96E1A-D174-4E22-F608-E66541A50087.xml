@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CA96E1A-D174-4E22-F608-E66541A50087" name="faixa_preco">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:21:30 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<abbreviation>Faixas de preço de cadas restaurante</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="0BF27C0A-9F63-08A1-C202-1E0DE4A87FCF">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:22:36 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="faixa" id="2FCFA8EF-DD10-A37E-A6D1-7BDF3BC9DF8C">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:22:36 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="4C5589AF-FB05-78A0-2405-92BE846CFB89">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:22:36 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="restaurante_codigo" id="53270FF6-7D7E-F266-1DAD-6010359C59E2">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:23:01 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05F36A7D-809D-846A-F99F-D2673ACBD514" referredColumn="5BF6E98B-6702-63FA-1F85-6928631C9DB7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABD953FD-3189-3DC6-E0F2-C86F72D66DB1" name="faixa_preco_PK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:22:47 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BF27C0A-9F63-08A1-C202-1E0DE4A87FCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07921E0F-641E-CC71-6B13-F61C8A2D5A45" name="faixa_preco_restaurante_FK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-15 00:23:01 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53270FF6-7D7E-F266-1DAD-6010359C59E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

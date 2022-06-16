@@ -149,6 +149,22 @@ article.article-home {
 }
 /****************************/
 
+/********** Button **********/
+.btn-green {
+    color:#FFF;
+    background-color: #81B29A;
+    border-color: #81B29A
+}
+.btn-green:hover {
+    color:#FFF;
+    background-color: #74A08A;
+    border-color: #74A08A
+}
+.btn-green:focus {
+    box-shadow: 0 0 0 0.25rem rgba(129, 178, 154, 0.5)
+}
+/****************************/
+
 /*********** Card ***********/
 .card {
     background-color: var(--body-background-card);
@@ -165,14 +181,6 @@ article.article-home {
     text-decoration: none;
     color: var(--font-color-link);
     font-weight: 700
-}
-.btn-primary{
-    background-color:#81b29a;
-    border-color: #81b29a;
-}
-.btn-primary:hover,:focus{
-    background-color:#e07a5f;
-    border-color: #e07a5f;
 }
 .reserva {
 	width: 100%;
@@ -252,7 +260,6 @@ footer ul li {
         background-position: 10px center;
         background-image: url(../images/lupa.png);
         background-size: 3.5vw;
-
     }
 
     section.section-home > .carousel {

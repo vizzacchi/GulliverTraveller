@@ -57,22 +57,6 @@
 <ownDataTypeParameters>12,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="avaliacao_codigo" id="53693C85-C946-0082-A4A8-6424FD559FC5">
-<createdBy>dougl</createdBy>
-<createdTime>2022-06-15 00:30:02 UTC</createdTime>
-<ownerDesignName>gastronomia</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4A11E4F1-4D9C-728A-98AC-3BD8A7018ABC" referredColumn="79C5660C-5DB4-B9A0-8863-F61B13BF9969"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="AF645B5C-EBC8-F112-361B-808615D95D34" name="usuarios_PK">
@@ -84,16 +68,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="242861AE-77B6-FB9A-23AD-DB091CE95116"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6350CE90-D47B-99FF-087F-048CCCC64CDA" name="usuarios_avaliacao_FK">
-<createdBy>dougl</createdBy>
-<createdTime>2022-06-15 00:30:02 UTC</createdTime>
-<ownerDesignName>gastronomia</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="53693C85-C946-0082-A4A8-6424FD559FC5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

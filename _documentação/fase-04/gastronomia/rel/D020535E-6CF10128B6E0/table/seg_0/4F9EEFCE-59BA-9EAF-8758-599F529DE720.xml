@@ -63,11 +63,27 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
 <dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,1</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="12B77E1E-D232-6516-114B-BB8426981B90" referredColumn="5BF6E98B-6702-63FA-1F85-6928631C9DB7"/>
+</associations>
+</Column>
+<Column name="usuarios_codigo" id="19C6A95F-F8C3-D982-3AD7-98B2D8DC5CB8">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-16 15:25:17 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A973D80-ED86-444E-1044-CE652F4CB460" referredColumn="242861AE-77B6-FB9A-23AD-DB091CE95116"/>
 </associations>
 </Column>
 </columns>
@@ -91,6 +107,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0E5CB043-2FCB-E701-8C00-D0704AA6F991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DE70ED6-9B50-BBD4-505E-7B86BE131313" name="avaliacao_usuarios_FK">
+<createdBy>dougl</createdBy>
+<createdTime>2022-06-16 15:25:17 UTC</createdTime>
+<ownerDesignName>gastronomia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19C6A95F-F8C3-D982-3AD7-98B2D8DC5CB8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

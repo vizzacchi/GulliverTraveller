@@ -13,6 +13,11 @@
 
 /******** Dark Mode ********/
 :root {
+    --color-white: #FAF1DE;
+    --color-orange: #E07A5F;
+    --color-blue: #3D405B;
+    --color-green: #81B29A;
+    --color-yellow: #F2CC8F;
     --body-background: #F3F5F8;
     --body-background-buscar: #F2F3F4;
     --body-background-card: #FFF;
@@ -29,11 +34,13 @@
     --body-box-shadow: 0
 }
 /****************************/
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px !important;
     background-color: var(--body-background)
 }
+
 /******** Dark Theme ********/
 .dark-theme .checkbox {
     opacity: 0;
@@ -81,13 +88,49 @@ body {
 .navbar .navbar-brand img {
 	width: 4rem;
 }
+.navbar .nav-item a {
+    text-decoration: none
+}
+.navbar .nav-item #accessibility > i,
 .navbar .nav-item.login i {
-    font-size: 2.4rem;
-	color: #E07A5F;
+    font-size: 1.9rem
+}
+.navbar .nav-item #accessibility > i {
+	color: var(--color-white)
+}
+.navbar .nav-item #accessibility::after {
+    color: var(--color-white);
+}
+.navbar .nav-item.login i {
+	color: var(--color-white)
 }
 /****************************/
 
 /*********** Main ***********/
+main.main-index {
+	height: 100vh;
+	margin-top: 0;
+	background-image: url('../images/fundo_2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+main.main-index > section {
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+main.main-index > section .form-control {
+    border-radius: .6rem;
+    padding-left: 44px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-image: url(../images/lupa.png);
+    background-size: 1.6rem;
+}
+main.main-index > section .btn {
+    height: 3.6rem;
+}
 main.main-page {
     margin-top: 4rem;
     padding-top: 2rem;
@@ -109,39 +152,18 @@ section.section-home .form-busca-destino {
     position: relative;
     margin-top: -5rem;
     padding: 2rem;
-    background-color: #F2CC8F;
+    background-color: var(--color-yellow);
     border-radius: 5px;
     box-shadow: var(--body-box-shadow)
+}
+section.section-home .form-busca-destino h4, input, label {
+    color: var(--color-blue)
 }
 /****************************/
 
 /********* Articles *********/
 article table tbody tr td {
 	color: var(--font-color)	
-}
-article.article-index {
-	height: 100vh;
-	margin-top: 0;
-	background-image: url('../images/fundo_2.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-article.article-index > section {
-	height: 100vh;
-	text-align: center;
-}
-article.article-index > section > img {
-	width: 60%;
-}
-article.article-index > section .pesquisar {
-    width: 80%;
-    border-radius: 15px;
-    padding-left: 35px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-image: url(../images/lupa.png);
-    background-size: 1.5vw;
 }
 article.article-home {
     padding-top: 2rem;
@@ -152,7 +174,7 @@ article.article-home {
 /********** Button **********/
 .btn-green {
     color:#FFF;
-    background-color: #81B29A;
+    background-color: var(--color-green);
     border-color: #81B29A
 }
 .btn-green:hover {
@@ -168,6 +190,7 @@ article.article-home {
 /*********** Card ***********/
 .card {
     background-color: var(--body-background-card);
+    border: none !important;
     box-shadow: var(--body-box-shadow);
 }
 .card img {
@@ -240,27 +263,18 @@ article.article-home {
 /********** Footer **********/
 footer {
     padding: 3rem 0 !important;
-	background-color: #F2CC8F;
+	background-color: var(--color-yellow);
 }
 footer p, h5 {
-    color: #3D405B;
+    color: var(--color-blue);
 }
 footer ul li {
     font-size: 1.4rem;
 }
 /****************************/
 
-@media(max-width:576px) {
-
-    .pesquisar{
-        width: 90%;
-        border-radius: 15px;
-        padding-left: 25px;
-        background-repeat: no-repeat;
-        background-position: 10px center;
-        background-image: url(../images/lupa.png);
-        background-size: 3.5vw;
-    }
+/********** @Media **********/
+@media(max-width: 720px) {
 
     section.section-home > .carousel {
         display: none;
@@ -269,3 +283,11 @@ footer ul li {
         margin-top: 6rem;
     }
 }
+@media(max-width: 960px) {
+
+    main.main-index > section {
+        width: 100vw;
+        padding: 2rem;
+    }
+}
+/****************************/

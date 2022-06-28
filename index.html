@@ -15,15 +15,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     </head>
 	<body>
-        <article class="article-index">
-			<section class="container">
+		<main class="main-index">
+			<section>
 				<img src="images/GulliverTraveller.png" class="img-fluid" alt="Logo Gulliver Traveller">
-				<form action="pages/destino.html" method="get" id="frmPesquisar">
-						<input type="text" id="pesquisar" name="pesquisar" class="rowform-control form-control-lg mx-auto pesquisar" placeholder="Escolha um destino....">
-						<input type="submit" class="btn btn-green" value="Procurar">
-				</form>
+				<div class="card">
+					<div class="card-body pb-0">
+						<form method="GET" action="pages/destino.html" class="row g-3" autocomplete="off">
+							<div class="col-12 col-md-9 col-lg-9">
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control" id="floatingInput" placeholder="Escolha um destino..." value="São Paulo">
+									<label class="ps-5" for="floatingInput">Escolha um destino...</label>
+								</div>
+							</div>
+							<div class="col-12 col-md-3 col-lg-3">
+								<button type="submit" class="btn btn-green btn-lg w-100">Buscar</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</section>
-        </article>
+		</main>
 
 		<!---- JavaScript ---->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>

@@ -40,11 +40,6 @@
                         </ul>
                     </div>
 
-                    <!--- Cotação --->
-                    <div class="nav-item ps-2 pe-2" id="valorDolar">
-
-                    </div>
-
                     <!--- Accessibility --->
                     <div class="nav-item ps-2 pe-2">
                         <div class="btn-group">
@@ -222,13 +217,21 @@
             <!------- Article ------->
             <article class="article-home container">
                 <section>
-                    <h1><strong>SÃO PAULO</strong></h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Destino</li>
-                        </ol>
-                    </nav>
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                        <div class="col">
+                            <h1><strong>SÃO PAULO</strong></h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Destino</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <!--- Cotação --->
+                            <h6 class="text-black fw-bold" id="valorDolar"></h6>
+                        </div>
+                    </div>
                 </section>
 
                 <!------ Card ------>

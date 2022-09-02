@@ -19,7 +19,7 @@ request.onload = function() {
 
         var valorDolar = document.getElementById("valorDolar");
 
-        valorDolar.innerHTML = "Dólar - R$ " +  valores.cotacaoCompra.toFixed(2);
+        valorDolar.innerHTML = "Dólar - R$ " +  valores.cotacaoCompra.toFixed(2) + " <i class='bi bi-cash text-success'></i>";
     }     
 };
 

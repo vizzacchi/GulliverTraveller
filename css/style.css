@@ -95,7 +95,7 @@ body {
 .navbar .nav-item.login i {
     font-size: 1.9rem
 }
-.navbar .nav-item #accessibility > i, #valorDolar {
+.navbar .nav-item #accessibility > i, #valorDolar, #description {
 	color: var(--color-white)
 }
 .navbar .nav-item #accessibility::after {
@@ -169,7 +169,7 @@ article.article-home {
     padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-article.article-home #valorDolar {
+article.article-home #valorDolar, #description {
     font-size: 20px;
 }
 /****************************/

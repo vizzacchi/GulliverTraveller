@@ -12,7 +12,7 @@ requestWeather.onload = function() {
 
         var description = document.getElementById("description");
 
-        description.innerHTML = results.temp + " <i class='bi bi-cloud-sun text-warning'></i>";
+        description.innerHTML = results.temp + "ºC <i class='bi bi-cloud-sun text-warning'></i>";
     }     
 };
 

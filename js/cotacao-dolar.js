@@ -1,8 +1,17 @@
-// Referência: https://github.com/adriano-sick/conversaoMoeda
-
-//Esse trecho coleta a data do dia anterior (o valor do dia de hoje so define apos o fechamento das bolsas), para poder inserir ele na url de consulta a api  
 const data = new Date();
-var dataFormatada = (((data.getMonth()+1)) + "-" + (data.getDate()-1) + "-" + data.getFullYear()).toLocaleString();
+
+if (data.getDay() == "1") // Se é segunda pega a cotação de sexta (data.getDate()-3)
+{
+    dataFormatada = (((data.getMonth()+1)) + "-" + (data.getDate()-3) + "-" + data.getFullYear()).toLocaleString();
+}
+else if (data.getDay() == "0") // Se é domingo pega a cotação de sexta (data.getDate()-2)
+{
+    dataFormatada = (((data.getMonth()+1)) + "-" + (data.getDate()-2) + "-" + data.getFullYear()).toLocaleString();
+}
+else // Nos outros dias pega a cotação do dia anterior (data.getDate()-1)
+{
+    dataFormatada = (((data.getMonth()+1)) + "-" + (data.getDate()-1) + "-" + data.getFullYear()).toLocaleString();
+}
 
 // Esse trecho do codigo consome a API do banco central brasileiro e retorna os dados da cotacao atual de compra, venda e horario da consulta
 let url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='" + dataFormatada + "'&$top=100&$format=json"; //URL da API

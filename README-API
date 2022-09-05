@@ -1,0 +1,20 @@
+=================================================
+API Localização
+=================================================
+- Utilizamos esta do Google Maps para exibir a localização dos Hotéis e Restaurantes. Com esta API é possível traçar uma rota da sua localização até o local desejado.
+
+https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0591227858904!2d-46.66963868500872!3d-23.56631998468048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d6e56707fd%3A0x269955670d659e58!2sD.O.M.!5e0!3m2!1spt-BR!2sbr!4v1655076171471!5m2!1spt-BR!2sbr
+
+=================================================
+API Cotação Dolar
+=================================================
+- Utilizamos esta API para exibir em tempo real o preço do dolar.
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='" + dataFormatada + "'&$top=100&$format=json
+
+=================================================
+API Clima Tempo(São Paulo)
+=================================================
+- Utilizamos esta API para exibir em tempo real a temperatura da cidade de SÃO PAULO
+
+https://api.hgbrasil.com/weather?key=d9be8928&city_name=São Paulo,SP&user_ip=remote&format=json-cors

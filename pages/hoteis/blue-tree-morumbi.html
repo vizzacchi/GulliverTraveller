@@ -308,9 +308,9 @@
 					
 					<!------ Como Chegar ------>
 					<h4>Como Chegar:</h4>
-					<div class="map-responsive">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.92870062585!2d-46.6964795!3d-23.6228972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd07ed725d00a38e!2sBlue%20Tree%20Premium%20Morumbi!5e0!3m2!1spt-BR!2sbr!4v1653499262297!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div id="map">
 					</div>
+					<div id="retorno"></div>
 				</div>
 			</article>
 		</main>
@@ -353,6 +353,9 @@
 				<div class="vw-plugin-top-wrapper"></div>
 			</div>
 		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+		<script src="../../js/geolocalizacao.js"></script>
+		<script>geolocation({ lat: -23.62262, lng: -46.69636 });</script>
 		<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 		<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
 		<script type="text/javascript" src="../../js/accessibility-dark-mode.js"></script>

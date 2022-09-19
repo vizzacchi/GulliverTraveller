@@ -33,7 +33,6 @@ function initMap(coordenadas) {
 
     //Distance Matrix para calcular a distância e o tempo entre dois pontos
     var origin1 = new google.maps.LatLng(latUser, lonUser);
-    alert(coordenadas.lat);
     var destinationA = new google.maps.LatLng(coordenadas.lat, coordenadas.lng);
 
     var service = new google.maps.DistanceMatrixService();

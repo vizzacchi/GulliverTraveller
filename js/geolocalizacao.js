@@ -45,11 +45,10 @@ function initMap(coordenadas) {
 
     function callback(response, status) {
         var retorno = JSON.stringify(response);
-        ret = document.getElementById("retorno").innerText = retorno;
         new_end = response.originAddresses[0];
         var endUser =  new_end; 
-        //ealert(response.rows.elements.distance.text);
-        //var tempo = document.getElementById("tempo").innerText = response.rows.elements[0];
+        var tempo = document.getElementById("tempo").innerText = "Tempo de viagem: " + response.rows[0].elements[0].duration.text;
+        var duracao = document.getElementById("distancia").innerText = "Distância de carro: " + response.rows[0].elements[0].distance.text
         var directionsService = new google.maps.DirectionsService();
         var directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: true });
         directionsRenderer.setMap(map);

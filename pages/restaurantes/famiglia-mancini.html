@@ -381,11 +381,11 @@
 
                 <!------ Como Chegar ------>
                 <h4>Como Chegar:</h4>
-                <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5027891719915!2d-46.64726578518231!3d-23.550379167071622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584cf371a77d%3A0x309890794eee79c8!2sFamiglia%20Mancini%20Trattoria!5e0!3m2!1spt-BR!2sbr!4v1655153782304!5m2!1spt-BR!2sbr"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div id="map">
+                    </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
             </div>
         </article>
     </main>
@@ -426,7 +426,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>geolocation("Rua Avanhandava, 81, Bela Vista - Centro Histórico de São Paulo, São Paulo - SP, 01050-000");</script>
     <!---- Accessibility ---->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>

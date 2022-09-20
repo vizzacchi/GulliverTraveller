@@ -380,9 +380,11 @@
 
                     <!------ Como Chegar ------>
                     <h4>Como Chegar:</h4>
-                    <div class="map-responsive">
-                        <iframe src="https://maps.google.com/maps?q=Av.%20Ipiranga,%20344%20-%2041%C2%BA%20andar%20-%20Rep%C3%BAblica,%20S%C3%A3o%20Paulo%20-%20SP,%2001046-0102880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map">
                     </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
                 </div>
             </article>
         </main>
@@ -417,6 +419,9 @@
         <!------ JavaScript ------>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>geolocation("Av. Ipiranga, 344 - 41º andar - República, São Paulo - SP, 01046-010");</script>
 
         <!---- Accessibility ---->
         <div vw class="enabled">

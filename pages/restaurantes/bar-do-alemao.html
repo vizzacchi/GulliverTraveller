@@ -376,11 +376,11 @@
 
                 <!------ Como Chegar ------>
                 <h4>Como Chegar:</h4>
-                <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0733816388984!2d-46.66399028518118!3d-23.601701068968016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a04c0898463%3A0xc659c5e8a48566b!2sBar%20do%20Alem%C3%A3o%20de%20S%C3%A3o%20Paulo%20em%20Moema!5e0!3m2!1spt-BR!2sbr!4v1655154262946!5m2!1spt-BR!2sbr"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div id="map">
+                    </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
             </div>
         </article>
     </main>
@@ -421,7 +421,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>geolocation("R. Dr. Mário Ferraz, 490 - Itaim Bibi, São Paulo - SP, 01453-011");</script>
     <!---- Accessibility ---->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>

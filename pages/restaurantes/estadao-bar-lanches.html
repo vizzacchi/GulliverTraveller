@@ -337,9 +337,11 @@
 					
 					<!------ Como Chegar ------>
 					<h4>Como Chegar:</h4>
-					<div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5484539198405!2d-46.64485718497152!3d-23.548737867011486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590138000001%3A0xd43132a04c7b59ed!2sBar%20e%20Lanches%20Estad%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1655245508342!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div id="map">
 					</div>
+					<div id="endereco"> </div>
+					<div id="distancia"> </div>
+					<div id="tempo"> </div>
 				</div>
 			</article>
 		</main>
@@ -374,7 +376,9 @@
 		<!------ JavaScript ------>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+		<script src="../../js/geolocalizacao.js"></script>
+		<script>geolocation("Viaduto Nove de Julho, 193 - Centro Histórico de São Paulo, São Paulo - SP, 01050-060");</script>
 		<!---- Accessibility ---->
 		<div vw class="enabled">
 			<div vw-access-button class="active"></div>

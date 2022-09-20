@@ -364,12 +364,11 @@
 
                 <!------ Como Chegar ------>
                 <h4>Como Chegar:</h4>
-                <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116974.55755483151!2d-46.811760283593756!3d-23.623873800000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce509de85a8d7b%3A0xd2f1b4db60124c1a!2sTatini%20Rosticceria!5e0!3m2!1spt-BR!2sbr!4v1655389555873!5m2!1spt-BR!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div id="map">
+                    </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
             </div>
         </article>
     </main>
@@ -410,6 +409,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>geolocation("R. Batataes, 558 - Jardim Paulista, São Paulo - SP, 01423-010");</script>
 
     <!---- Accessibility ---->
     <div vw class="enabled">

@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="0F703347-B2D3-031C-A5A9-4ACDBDAA051A">
-<createdBy>dougl</createdBy>
-<createdTime>2022-06-14 23:55:18 UTC</createdTime>
-<ownerDesignName>gastronomia</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</BusinessInfoDesign>

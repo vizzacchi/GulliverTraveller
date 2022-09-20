@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="gastronomia" id="3381F346-79B8-B6D7-8557-D9A6533F0213" version="3.5">
-<createdBy>dougl</createdBy>
-<createdTime>2022-06-14 23:55:18 UTC</createdTime>
-<ownerDesignName>gastronomia</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>3381F346-79B8-B6D7-8557-D9A6533F0213</designId>
-</OSDM_Design>

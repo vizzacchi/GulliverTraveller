@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="2268B879-86B6-83CD-99E9-535F939C843C">
-<createdBy>dougl</createdBy>
-<createdTime>2022-06-14 23:55:18 UTC</createdTime>
-<ownerDesignName>gastronomia</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>

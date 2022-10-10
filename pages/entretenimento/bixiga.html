@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../images/GulliverTravellerMenu.png">
+    <title>Bixiga</title>
+
+    <!------ Css ------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!----- Icons ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+            <div class="container-fluid">
+                <a href="../../index.html" class="navbar-brand ps-3">
+                    <img src="../../images/GulliverTravellerMenu.png" alt="Logo Gulliver Traveller">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../locadora.html" class="nav-link">Aluguel de carros</a></li>
+                        <li class="nav-item"><a href="../cultura.html" class="nav-link">Cultura</a></li>
+                        <li class="nav-item"><a href="../dicas-uteis.html" class="nav-link">Dicas Úteis</a></li>
+                        <li class="nav-item"><a href="../restaurantes.html" class="nav-link">Gastronomia</a></li>
+                        <li class="nav-item"><a href="../historia.html" class="nav-link">História</a></li>
+                        <li class="nav-item"><a href="../hoteis.html" class="nav-link">Hotéis</a></li>
+                        <li class="nav-item"><a href="../parques.html" class="nav-link">Parques</a></li>
+                        <li class="nav-item"><a href="../vida_noturna.html" class="nav-link">Vida noturna</a></li>
+                        <li class="nav-item"><a href="../entretenimento.html" class="nav-link">Entretenimento</a></li>
+                    </ul>
+                </div>
+
+                <!--- Accessibility --->
+                <div class="nav-item ps-2 pe-2">
+                    <div class="btn-group">
+                        <a href="#" class="dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="fas fa-universal-access"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
+                            <li class="dropdown-item dark-theme">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="chk">
+                                    <label class="form-check-label" for="chk">Contraste</label>
+                                </div>
+                            </li>
+                            <li><a href="#" class="dropdown-item" onclick="aumenta()"><i class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="diminui()"><i class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="dislexia()"><i class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="roboto()"><i class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!------- Login ------->
+                <div class="nav-item login ps-3 pe-3">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!----- Offcanvas ----->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Login</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Entrar</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Cadastre-se</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!------ Sign in ------>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <form method="" action="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" value="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    value="123456">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-success w-50">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!------ Sign up ------>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <form method="" action="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Usuário"
+                                    value="user">
+                                <label for="floatingInput">User</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" value="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    value="123456">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-green w-50">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------- Conteúdo ------->
+    <main class="main-page container">
+        <section class="mb-4">
+            <h1 class="text-center">Bixiga</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../destino.html">Destino</a></li>
+                    <li class="breadcrumb-item"><a href="../entretenimento.html">Entretenimento</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Bixiga</li>
+                </ol>
+            </nav>
+        </section>
+        <article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+            <div class="col">
+
+                <!------- Descrição ------->
+                <p class="text-left">
+                    O Bixiga é entendido como um dos mais tradicionais bairros da cidade de São Paulo, embora na divisão
+                    administrativa da cidade ele não exista oficialmente como tal. Corresponde aproximadamente à região
+                    localizada entre as ruas Major Diogo, Avenida Nove de Julho, Rua Sílvia e Avenida Brigadeiro Luís
+                    Antônio, no distrito da Bela Vista, embora sua delimitação possa ser motivo de polêmica dependendo
+                    da fonte.
+                </p>
+                <p>
+                    Formado por imigrantes italianos, ganhou importância histórica e turística na capital paulista. A
+                    tradição e a religiosidade italianas, que são fortemente mantidas e as inúmeras cantinas existentes
+                    no bairro são grandes atrativos turísticos. No bairro situa-se a sede da escola de samba Vai-Vai,
+                    que até hoje realiza ensaios pelas ruas do bairro.
+                </p>
+                <!------ Avaliações ------>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6>44 avaliações, nota 4.5 estrelas</h6>
+                        <div class="card-rate">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-green" data-bs-toggle="modal"
+                                data-bs-target="#modal-comentarios">Comentários</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal Avaliações --->
+                <div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="collapse" id="collapseExample">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="floatingTextarea2"></textarea>
+                                        <label for="floatingTextarea2">Deixe seu comentário...</label>
+                                    </div>
+                                </div>
+
+                                <!----- Comentários ----->
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Italo Santos</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Estivemos lá durante a passagem de ano, quando vários locais estavam fechados.
+                                        Mesmo assim, os moradores nos paravam na rua, conversavam conosco e se ofereciam
+                                        para nos ajudar. O bairro é muito lindinho. Quero voltar numa data fora de
+                                        feriado.
+                                    </p>
+                                </div>
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Guilherme Ribas</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Um bairro agradável com ruas com ótimas opções de comidas italianas e lojas com
+                                        roupas sustentáveis. Conhecemos a Casa Jardim Secreto que é uma graça e também o
+                                        Nano Cafés especiais no mesmo espaço. Tem uma linda paróquia e a escadaria que
+                                        remete ao início do desenvolvimento do bairro.
+                                    </p>
+                                </div>
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Douglas Jorge</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        É um bairro tradicional que sempre apreciei por causa dos bares e restaurantes
+                                        (principalmente as cantinas e a padaria Italianinha).
+                                        Esse final de semana o bairro me trouxe mais uma brilhante surpresa, o Jazz na
+                                        escadaria do Bixiga. Evento muito bom, gratuito com ótima banda tocando jazz e
+                                        opções de comidas (em barraquinhas).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-green" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample">Inserir Comentários</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ Informações ------>
+                <table class="table">
+                    <tbody>                         
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-map mx-2"></i> Região</td>
+                            <td class="text-end">Bela Vista</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-currency-dollar mx-2"></i> Preço</td>
+                            <td class="text-end">De acordo com cada estabelecimento</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-clock mx-2"></i> Horário</td>
+                            <td class="text-end">De acordo com cada estabelecimento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col">
+
+                <!--------- Fotos --------->
+                <h4>Imagens:</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/bixiga/bixiga-1.jpg"
+                                class="card-img-top" alt="Villa Tavola no Bixiga"
+                                title="Villa Tavola">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/bixiga/bixiga-2.jpg"
+                                class="card-img-top" alt="Vila Itororó no Bixiga" title="Vila Itororó">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/bixiga/bixiga-3.jpg"
+                                class="card-img-top"
+                                alt="VEscadaria do Bixiga" title="Escadaria">
+                        </div>
+                    </div>
+                </div>
+
+                <!------ Como Chegar ------>
+                <h4>Como Chegar:</h4>
+                    <div id="map">
+                    </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
+            </div>
+        </article>
+    </main>
+
+    <!----- Footer ----->
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <ul class="list-unstyled d-flex text-end">
+                        <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24"
+                                    height="24"></i></a></li>
+                        <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24"
+                                    height="24"></i></a></li>
+                        <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" width="24"
+                                    height="24"></i></a></li>
+                    </ul>
+                    <p>Gulliver Traveller | FIAP &copy;2022 - Todos os direitos reservados.</p>
+                </div>
+                <div class="col">
+                    <form method="" action="">
+                        <h5>Assine a nossa newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control" id="newsletter1"
+                                placeholder="Digite seu e-mail...">
+                            <input type="submit" class="btn btn-green" value="Inscrever">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------ JavaScript ------>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>
+            geolocation(" Bixiga, São Paulo - SP");
+        </script>
+    <!---- Accessibility ---->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script type="text/javascript" src="../../js/accessibility-dark-mode.js"></script>
+</body>
+
+</html>

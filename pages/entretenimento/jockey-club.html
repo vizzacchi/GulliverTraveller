@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../images/GulliverTravellerMenu.png">
+    <title>Jockey Club</title>
+
+    <!------ Css ------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!----- Icons ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+            <div class="container-fluid">
+                <a href="../../index.html" class="navbar-brand ps-3">
+                    <img src="../../images/GulliverTravellerMenu.png" alt="Logo Gulliver Traveller">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../locadora.html" class="nav-link">Aluguel de carros</a></li>
+                        <li class="nav-item"><a href="../cultura.html" class="nav-link">Cultura</a></li>
+                        <li class="nav-item"><a href="../dicas-uteis.html" class="nav-link">Dicas Úteis</a></li>
+                        <li class="nav-item"><a href="../restaurantes.html" class="nav-link">Gastronomia</a></li>
+                        <li class="nav-item"><a href="../historia.html" class="nav-link">História</a></li>
+                        <li class="nav-item"><a href="../hoteis.html" class="nav-link">Hotéis</a></li>
+                        <li class="nav-item"><a href="../parques.html" class="nav-link">Parques</a></li>
+                        <li class="nav-item"><a href="../vida_noturna.html" class="nav-link">Vida noturna</a></li>
+                        <li class="nav-item"><a href="../entretenimento.html" class="nav-link">Entretenimento</a></li>
+                    </ul>
+                </div>
+
+                <!--- Accessibility --->
+                <div class="nav-item ps-2 pe-2">
+                    <div class="btn-group">
+                        <a href="#" class="dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="fas fa-universal-access"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
+                            <li class="dropdown-item dark-theme">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="chk">
+                                    <label class="form-check-label" for="chk">Contraste</label>
+                                </div>
+                            </li>
+                            <li><a href="#" class="dropdown-item" onclick="aumenta()"><i class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="diminui()"><i class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="dislexia()"><i class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
+                            <li><a href="#" class="dropdown-item" onclick="roboto()"><i class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!------- Login ------->
+                <div class="nav-item login ps-3 pe-3">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!----- Offcanvas ----->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Login</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Entrar</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Cadastre-se</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!------ Sign in ------>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <form method="" action="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" value="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    value="123456">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-success w-50">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!------ Sign up ------>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <form method="" action="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Usuário"
+                                    value="user">
+                                <label for="floatingInput">User</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" value="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    value="123456">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-green w-50">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------- Conteúdo ------->
+    <main class="main-page container">
+        <section class="mb-4">
+            <h1 class="text-center">Jockey Club</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../destino.html">Destino</a></li>
+                    <li class="breadcrumb-item"><a href="../entretenimento.html">Entretenimento</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Jockey Club</li>
+                </ol>
+            </nav>
+        </section>
+        <article class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+            <div class="col">
+
+                <!------- Descrição ------->
+                <p class="text-left">
+                    O Jockey Club de São Paulo é a entidade que administra e detém a propriedade do Hipódromo de Cidade
+                    Jardim. Foi fundado em 14 de março de 1875, sob o nome de "Club de Corridas Paulistano". Sua
+                    primeira praça de corridas foi o Hipódromo da Mooca, na rua Bresser. Inicialmente havia uma
+                    determinação para que o novo hipódromo fosse situado no Ibirapuera. No entanto, mais tarde, em 25 de
+                    janeiro de 1941, foi inaugurado o atual hipódromo da Cidade Jardim, que buscou corresponder as
+                    modernidades atuando como palco de diversos eventos como feiras, desfiles de moda, algumas
+                    festas, entre outros, instalado no bairro de mesmo nome, no distrito do Morumbi, em São Paulo.
+                </p>
+                <!------ Avaliações ------>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6>5.601 avaliações, nota 4,4 estrelas</h6>
+                        <div class="card-rate">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-green" data-bs-toggle="modal"
+                                data-bs-target="#modal-comentarios">Comentários</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- Modal Avaliações --->
+                <div class="modal fade" id="modal-comentarios" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Todas as avaliações</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="collapse" id="collapseExample">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="floatingTextarea2"></textarea>
+                                        <label for="floatingTextarea2">Deixe seu comentário...</label>
+                                    </div>
+                                </div>
+
+                                <!----- Comentários ----->
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Italo Santos</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-half text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Local histórico no desenvolvimento de São Paulo, hoje podemos ver um ambiente
+                                        que está totalmente precário de ajustes na infraestrutura e marketing. A
+                                        divulgação dos páreos pelas mídias sociais é baixíssima, e entradas com pouca
+                                        sinalização do local da arquibancada.
+                                    </p>
+                                    <p>
+                                        A experiência em si é bem bacana, dando as apostas ainda mais emoção aos
+                                        espectadores do que simplesmente ir assistir. Apenas os restaurantes anexos ao
+                                        Jockey detém infraestrutura moderna, estando todo o ambiente clássico interno do
+                                        local com necessidade urgente de atualizações. A entrada não é no local indicado
+                                        no mapa, mas sim em uma rua lateral um pouco antes.
+                                    </p>
+                                    <p>
+                                        Em resumo, é uma ótima experiência mas o que vemos em 80% do público são pessoas
+                                        mais tradicionais que já frequentavam há décadas, sem conversão de novos adeptos
+                                        das atuais gerações. Um trabalho de marketing e readaptação da estrutura é
+                                        crucialmente necessário.
+                                    </p>
+                                </div>
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Guilherme Ribas</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Ontem depois de muitos anos voltei ao Jockey Clube de São Paulo.
+                                        Neste final de semana ocorre o Grande prêmio São Paulo. 
+                                    </p>
+                                    <p>
+                                        Vale a pena visitar para conhecer como funciona o Turfe (corrida de cavalos).
+                                        Lá você encontra vários restaurantes, por conta do Grande Prêmio montaram um
+                                        parque com brinquedos infláveis para as crianças.
+                                    </p>
+                                    <p>
+                                        Você pode comprar também camisetas da quadrifeta.com.br todas relacionadas ao
+                                        Turfe, se comprar mais de 1 tem desconto!
+                                    </p>
+                                </div>
+                                <div class="border p-3 mb-3">
+                                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 mb-4">
+                                        <div class="col">
+                                            <h5>Douglas Jorge</h5>
+                                        </div>
+                                        <div class="col text-end">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Jockey clube é um lugar bonito onde acontecem corridas de cavalo puro sangue
+                                        inglês, com apostas em várias modalidades inclusive com apostas em outros
+                                        hipódromos, internacional também. O lugar é muito bonito, tem ótimos
+                                        restaurantes. Você pode ir com a família, levar crianças. Tem amplo
+                                        estacionamento.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-green" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample">Inserir Comentários</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------ Informações ------>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-telephone mx-2"></i> Telefone</td>
+                            <td class="text-end">(11) 2161-8300</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-display mx-2"></i> Site</td>
+                            <td class="text-end"><a href="https://www.jockeysp.com.br/"
+                                    target="_black">www.jockeysp.com.br</a></td>
+                        </tr>      
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-map mx-2"></i> Região</td>
+                            <td class="text-end">Cidade Jardim</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold"><i class="bi bi-clock mx-2"></i> Horário</td>
+                            <td class="text-end">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <strong class="text-danger">fechado</strong>
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                        aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li class="dropdown-item">08:00–17:00 ⋅ segunda-feira</li>
+                                        <li class="dropdown-item">08:00–17:00 ⋅ terça-feira</li>
+                                        <li class="dropdown-item">08:00–17:00 ⋅ quarta-feira</li>
+                                        <li class="dropdown-item">08:00–17:00 ⋅ quinta-feira</li>
+                                        <li class="dropdown-item">08:00–17:00 ⋅ sexta-feira</li>
+                                        <li class="dropdown-item">12:00–23:00 ⋅ sábado</li>
+                                        <li class="dropdown-item">12:00–21:00 ⋅ domingo</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col">
+
+                <!--------- Fotos --------->
+                <h4>Imagens:</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 mb-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/jockey-club/jockey-club-1.jpg"
+                                class="card-img-top" alt="Vista aérea do Jockey Club de São Paulo"
+                                title="Vista aérea">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/jockey-club/jockey-club-2.jpg"
+                                class="card-img-top" alt="Fachada do Jockey Club de São Paulo ao anoitecer"
+                                title="Fachada">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="../../images/entretenimento/jockey-club/jockey-club-3.jpg"
+                                class="card-img-top"
+                                alt="Entrada da atual sede do Jockey Club de São Paulo" title="Entrada da atual sede">
+                        </div>
+                    </div>
+                </div>
+
+                <!------ Como Chegar ------>
+                <h4>Como Chegar:</h4>
+                    <div id="map">
+                    </div>
+                    <div id="endereco"> </div>
+                    <div id="distancia"> </div>
+                    <div id="tempo"> </div>
+            </div>
+        </article>
+    </main>
+
+    <!----- Footer ----->
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <ul class="list-unstyled d-flex text-end">
+                        <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24"
+                                    height="24"></i></a></li>
+                        <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24"
+                                    height="24"></i></a></li>
+                        <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" width="24"
+                                    height="24"></i></a></li>
+                    </ul>
+                    <p>Gulliver Traveller | FIAP &copy;2022 - Todos os direitos reservados.</p>
+                </div>
+                <div class="col">
+                    <form method="" action="">
+                        <h5>Assine a nossa newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input type="email" class="form-control" id="newsletter1"
+                                placeholder="Digite seu e-mail...">
+                            <input type="submit" class="btn btn-green" value="Inscrever">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------ JavaScript ------>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA32PDmcZkbv37_Jb-GU9ZOTu9OW4j1n4o" defer></script>
+        <script src="../../js/geolocalizacao.js"></script>
+        <script>geolocation(" Av. Lineu de Paula Machado, 1263 - Cidade Jardim, São Paulo - SP, 05601-000");
+        </script>
+    <!---- Accessibility ---->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script type="text/javascript" src="../../js/accessibility-dark-mode.js"></script>
+</body>
+
+</html>

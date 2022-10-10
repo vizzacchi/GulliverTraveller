@@ -150,11 +150,16 @@ section.section-home > .carousel > .carousel-inner > .carousel-item {
 }
 section.section-home .form-busca-destino {
     position: relative;
-    margin-top: -5rem;
+    margin-top: -4rem;
     padding: 2rem;
     background-color: var(--color-yellow);
     border-radius: 5px;
     box-shadow: var(--body-box-shadow)
+}
+section.section-home .form-busca-destino a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000
 }
 section.section-home .form-busca-destino h4, input, label {
     color: var(--color-blue)

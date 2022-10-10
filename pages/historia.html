@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../images/GulliverTravellerMenu.png">
+        <title>Traveller | História</title>
+
+        <!------ Css ------>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!----- Icons ----->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand ps-3">
+                        <img src="../images/GulliverTravellerMenu.png" alt="Logo Gulliver Traveller">
+                    </a>
+                    <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="" class="nav-link disabled">Aluguel de carros</a></li>
+                            <li class="nav-item"><a href="" class="nav-link disabled">Cultura</a></li>
+                            <li class="nav-item"><a href="../pages/dicas-uteis.html" class="nav-link">Dicas Úteis</a></li>
+                            <li class="nav-item"><a href="../pages/restaurantes.html" class="nav-link">Gastronomia</a></li>
+                            <li class="nav-item"><a href="../pages/historia.html" class="nav-link">História</a></li>
+                            <li class="nav-item"><a href="../pages/hoteis.html" class="nav-link">Hotéis</a></li>
+                            <li class="nav-item"><a href="" class="nav-link disabled">Parques</a></li>
+                            <li class="nav-item"><a href="" class="nav-link disabled">Vida noturna</a></li>
+                        </ul>
+                    </div>
+
+                    <!--- Accessibility --->
+                    <div class="nav-item ps-2 pe-2">
+                        <div class="btn-group">
+                            <a href="#" class="dropdown-toggle" id="accessibility" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <i class="fas fa-u
+                                niversal-access"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibility">
+                                <li class="dropdown-item dark-theme">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="chk">
+                                        <label class="form-check-label" for="chk">Contraste</label>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="dropdown-item" onclick="aumenta()"><i class="bi bi-zoom-in text-end pe-1"></i>Aumenta Fonte</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="diminui()"><i class="bi bi-zoom-out text-end pe-1"></i>Diminui Fonte</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="dislexia()"><i class="bi bi-type pe-1"></i>Fonte Dislexia</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="roboto()"><i class="bi bi-type pe-1"></i>Fonte Padrão</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!------- Login ------->
+                    <div class="nav-item login ps-3 pe-3">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <!----- Offcanvas ----->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Login</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Entrar</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Cadastre-se</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!------ Sign in ------>
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <form method="" action="" autocomplete="off">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-success w-50">Login</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!------ Sign up ------>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <form method="" action="" autocomplete="off">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Usuário" value="user">
+                                    <label for="floatingInput">User</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123456">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-green w-50">Cadastrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!------- Conteúdo ------->
+        <main class="main-page container">
+            <section>
+                <h1>História</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="destino.html">Destino</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">História</li>
+                    </ol>
+                </nav>
+            </section>
+
+            <!------ Card ------>
+            <article class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/tunel-da-rota.html">
+                            <img src="../images/historia/tunel_da_rota.jpg" class="card-img-top" alt="Foto do Tunel da Rota | Museu na Av. Tiradentes" title="Foto do Tunel da Rota | Museu na Av. Tiradentes">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Tunel da Rota</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Avenida Tiradentes 440, São Paulo, Estado de São Paulo 01102-000 Brasil
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3315-0188
+                                </p>
+                            </div>
+                        </div>
+						<div class="d-grid mx-auto reserva">
+							<a href="https://www.policiamilitar.sp.gov.br/unidades/ccomsoc/roteiro/index.html"target="_blank" class="btn btn-green ">Faça sua reserva</a>
+						</div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/ceagesp.html">
+                            <img src="../images/historia/ceagesp.webp" class="card-img-top"
+                                alt="Foto aerea do interior do CEAGESP SP"
+                                title="Foto aerea do interior do CEAGESP SP">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">CEAGESP</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Av. Dr. Gastão Vidigal 1946, São Paulo, SP, 05316-900
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3643-3700
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://ceagesp.gov.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/bolsa-de-valores.html">
+                            <img src="../images/historia/bovespa.jpg" class="card-img-top"
+                                alt="Foto da fachada da Bovespa"
+                                title="Foto da fachada da Bovespa">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Bolsa de Valores de SP</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Rua Álvares Penteado 151, São Paulo, SP, 01012-905
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3115-5879
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://www.b3.com.br/pt_br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/kantuta.html">
+                            <img src="../images/historia/feira-kantuta.jpg" class="card-img-top"
+                                alt="Foto das barracas da feira Kantuta"
+                                title="Foto das barracas da feira Kantuta">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Feira Kantuta</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Rua Pedro Vicente 600 (Caninde), São Paulo, SP, 01109-010
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 4220-1281
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://www.boliviacultural.com.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/passeio-noturno.html">
+                            <img src="../images/historia/passeio-noturno.jpg" class="card-img-top"
+                                alt="Entrada do passeio noturno do ZOO de São Paulo"
+                                title="Entrada do passeio noturno do ZOO de São Paulo">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Passeio Noturno Zoologico</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Av. Miguel Stefano, 4241, São Paulo
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 5073-0811
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://zoologico.com.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/casa-da-xiclet.html">
+                            <img src="../images/historia/casa-da-xiclet.jpg" class="card-img-top"
+                                alt="Fachada da Casa da Xiclet"
+                                title="Fachada da Casa da Xiclet">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Casa da Xiclet</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Rua Fradique Coutinho 1855, São Paulo, SP, 05416-012
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (13) 5342-6478
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://casadaxiclet.com/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/cata-vento.html">
+                            <img src="../images/historia/catavento-cultural.jpg" class="card-img-top"
+                                alt="Fachada do museu catavento-cultural"
+                                title="Fachada do museu Cata Vento Cultural">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Catavento Cutural</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Av Mercúrio, s/n - Pq Dom Pedro II, Centro, São Paulo - SP
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3315 0051
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="www.cataventocultural.org.br" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/ovelhao.html">
+                            <img src="../images/historia/ovelhao.jpg" class="card-img-top"
+                                alt="Fachada do restaurante o Velhão"
+                                title="Fachada do restaurante o Velhão">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">O Velhão</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Estr. Municipal
+                                    Prefeito Dr. Sarkis Tellian, 3.000
+                                    Jardim Samambaia, Mairiporã – SP, 07600-000
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 4485-1330
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="http://www.velhao.com.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/mirante-9-julho.html">
+                            <img src="../images/historia/mirante-nove-de-julho.jpg" class="card-img-top"
+                                alt="Foto do mirante nove de julho"
+                                title="Foto do Mirante Nove de Julho">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Mirante Nove Julho</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Rua Carlos Comenale, São Paulo, SP, 01332-030 Brasil
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3111-6342
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://mirante.art.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/patio-colegio.html">
+                            <img src="../images/historia/patio-colegio.jpg" class="card-img-top"
+                                alt="Foto da fachada do Pátio do Colégio dos Jesuitas"
+                                title="Foto da fachada do Pátio do Colégio dos Jesuitas">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Pátio do Colégio</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Um (Largo Pateo do Colegio), São Paulo, SP, 01016-040
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3105-6899
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="http://www.pateocollegio.com.br/newsite/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/mosteiro-sao-bento.html">
+                            <img src="../images/historia/mosteiro-sao-bento.jpg" class="card-img-top"
+                                alt="Vista aerea do Mosteiro São Bento São Paulo"
+                                title="Vista aerea do Mosteiro São Bento São Paulo">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Mosteiro São Bento</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Lrg. São Bento, São Paulo, SP, 01029-010
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3328-8799
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/basilica-nossa-senhora-da-assuncao-mosteiro-de-sao-bento" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/catedral-da-se.html">
+                            <img src="../images/historia/catedral-da-se.jpg" class="card-img-top"
+                                alt="Fachada da Catedral da Sé"
+                                title="Fachada da Catedral da Sé">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Catedral da Sé</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Pça. da Sé S/N, São Paulo, SP, 01001-000
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3107-6832
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://www.facebook.com/catedraldasesp/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card list">
+                        <a href="../pages/historia/mercado-municipal.html">
+                            <img src="../images/historia/mercado-municipal-SP.jpg" class="card-img-top"
+                                alt="Fachada Mercado Municipal de São Paulo"
+                                title="Fachada Mercado Municipal de São Paulo">
+                        </a>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title text-center">Mercado Municipal</h5>
+                            <div class="card-rate text-center mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <div class="card-text">
+                                <p class="address">
+                                    <strong>Endereço:</strong> Rua da Cantareira 306, São Paulo, 01024
+                                </p>
+                                <p class="phone">
+                                    <strong>Telefone:</strong> (11) 3326-6664
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-auto reserva">
+                            <a href="https://portaldomercadao.com.br/" target="_blank"
+                                class="btn btn-green ">Faça sua reserva</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!----- Footer ----->
+        <footer>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="col">
+                        <ul class="list-unstyled d-flex text-end">
+                            <li class="ms-0"><a href="#" class="text-muted"><i class="bi bi-twitter" width="24"
+                                        height="24"></i></a></li>
+                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" width="24"
+                                        height="24"></i></a></li>
+                            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" width="24"
+                                        height="24"></i></a></li>
+                        </ul>
+                        <p>Gulliver Traveller | FIAP &copy;2022 - Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col">
+                        <form method="" action="">
+                            <h5>Assine a nossa newsletter</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input type="email" class="form-control" id="newsletter1"
+                                    placeholder="Digite seu e-mail...">
+                                <input type="submit" class="btn btn-green" value="Inscrever">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!------ JavaScript ------>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!---- Accessibility ---->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+        <script type="text/javascript" src="../js/accessibility-dark-mode.js"></script>
+    </body>
+</html>
